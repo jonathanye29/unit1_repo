@@ -12,4 +12,17 @@ c = int(input())
 print(a+b+c)
 ```
 
-![](snakify_task1.jpg)
+![](chp1_snakify_task1.jpg)
+
+
+## Hi John
+Write a program that greets the person by printing the word "Hi" and the name of the person. See the examples below.
+
+
+```.py
+print("Hi " + input())
+```
+
+
+![](chp1_snakify_task2.jpg)
+
