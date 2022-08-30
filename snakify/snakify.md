@@ -116,6 +116,8 @@ print(desk1 + desk2 + desk3)
 ![](chp1_snakify_task7.jpg)
 
 
+# Chapter 2
+
 ## Last digit of integer
 Given an integer number, print its last digit.
 
