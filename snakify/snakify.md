@@ -211,3 +211,16 @@ print(str(a % 10) + str(a // 10 % 10) + str(a // 100))
 ![](chp2_snakify_task7.jpg)
 
 
+## Merge two numbers
+Given two two-digit numbers, merge their digits as shown in the tests below.
+
+
+```.py
+a = int(input())
+b = int(input())
+print(str(a // 10) + str(b // 10) + str(a % 10) + str(b % 10))
+```
+
+
+![](chp2_snakify_task8.jpg)
+
