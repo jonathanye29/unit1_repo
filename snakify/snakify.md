@@ -65,3 +65,58 @@ print("Hello, " + name + "!")
 
 ![](chp1_snakify_task5.jpg)
 
+
+## Two timestamps
+A timestamp is three numbers: a number of hours, minutes and seconds. Given two timestamps, calculate how many seconds is between them. The moment of the first timestamp occurred before the moment of the second timestamp.
+
+
+```.py
+h1 = int(input())
+m1 = int(input())
+s1 = int(input())
+
+h2 = int(input())
+m2 = int(input())
+s2 = int(input())
+
+h1 = h1 * 3600
+m1 = m1 * 60
+
+h2 = h2 * 3600
+m2 = m2 *60
+
+time1 = h1 + m1 + s1
+time2 = h2 + m2 + s2
+
+print(time2 - time1)
+```
+
+![](chp1_snakify_task6.jpg)
+
+
+## School desks
+A school decided to replace the desks in three classrooms. Each desk sits two students. Given the number of students in each class, print the smallest possible number of desks that can be purchased.
+The program should read three integers: the number of students in each of the three classes, a, b and c respectively.
+
+In the first test there are three groups. The first group has 20 students and thus needs 10 desks. The second group has 21 students, so they can get by with no fewer than 11 desks. 11 desks is also enough for the third group of 22 students. So we need 32 desks in total.
+
+
+```.py
+class1 = int(input())
+class2 = int(input())
+class3 = int(input())
+
+desk1 = class1 // 2 + class1 % 2
+desk2 = class2 // 2 + class2 % 2
+desk3 = class3 // 2 + class3 % 2
+
+print(desk1 + desk2 + desk3)
+```
+
+![](chp1_snakify_task7.jpg)
+
+
+![](chp1_snakify_task8.jpg)
+![](chp1_snakify_task9.jpg)
+![](chp1_snakify_task10.jpg)
+![](chp1_snakify_task11.jpg)
