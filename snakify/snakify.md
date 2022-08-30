@@ -182,5 +182,32 @@ print(a // 10 % 10)
 ![](chp2_snakify_task5.jpg)
 
 
+## Sum of digits
+Given a three-digit number. Find the sum of its digits.
+
+
+```.py
+number = int(input())
+a = number // 100
+b = number // 10 % 10
+c = number % 10
+print(a + b + c)
+```
+
+
+![](chp2_snakify_task6.jpg)
+
+
+## Reverse three digits
+Given a three-digit integer number, print its digits in a reversed order.
+
+
+```.py
+a = int(input())
+print(str(a % 10) + str(a // 10 % 10) + str(a // 100))
+```
+
+
+![](chp2_snakify_task7.jpg)
 
 
