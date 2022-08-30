@@ -157,5 +157,23 @@ print(str(a % 10) + str(a // 10))
 ![](chp2_snakify_task3.jpg)
 
 
-## 
+## Last two digits
+Given an integer number, print its last two digits.
+
+
+```.py
+print(int(input()) % 100)
+```
+
+
 ![](chp2_snakify_task4.jpg)
+
+
+## Tens digit
+Given an integer. Print its tens digit.
+
+
+```.py
+
+
+
