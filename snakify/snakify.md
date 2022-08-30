@@ -128,6 +128,32 @@ print(a % 10)
 
 ![](chp2_snakify_task1.jpg)
 
+
+## Two digits
+Given a two-digit number, print its digits separately.
+
+
+```.py
+a = int(input())
+print(a // 10 , a % 10)
+```
+
+
 ![](chp2_snakify_task2.jpg)
+
+
+## Swap digits
+Given a two-digit number, swap its digits as shown in the tests below.
+
+
+```.py
+a = int(input())
+print(str(a % 10) + str(a // 10))
+```
+
+
 ![](chp2_snakify_task3.jpg)
+
+
+## 
 ![](chp2_snakify_task4.jpg)
