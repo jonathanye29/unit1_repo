@@ -116,7 +116,18 @@ print(desk1 + desk2 + desk3)
 ![](chp1_snakify_task7.jpg)
 
 
-![](chp1_snakify_task8.jpg)
-![](chp1_snakify_task9.jpg)
-![](chp1_snakify_task10.jpg)
-![](chp1_snakify_task11.jpg)
+## Last digit of integer
+Given an integer number, print its last digit.
+
+
+```.py
+a = int(input())
+print(a % 10)
+```
+
+
+![](chp2_snakify_task1.jpg)
+
+![](chp2_snakify_task2.jpg)
+![](chp2_snakify_task3.jpg)
+![](chp2_snakify_task4.jpg)
