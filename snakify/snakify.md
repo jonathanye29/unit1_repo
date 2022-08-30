@@ -174,6 +174,13 @@ Given an integer. Print its tens digit.
 
 
 ```.py
+a = int(input())
+print(a // 10 % 10)
+```
+
+
+![](chp2_snakify_task5.jpg)
+
 
 
 
