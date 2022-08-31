@@ -224,3 +224,23 @@ print(str(a // 10) + str(b // 10) + str(a % 10) + str(b % 10))
 
 ![](chp2_snakify_task8.jpg)
 
+
+## Cyclic rotation
+Given a four-digit integer number, perform its cyclic rotation by two digits, as shown in the tests below.
+
+
+```.py
+a = int(input())
+print(str(a % 100) + str(a // 100))
+```
+
+
+![](chp2_snakify_task9.jpg)
+
+
+## Fractional part
+Given a positive real number, print its fractional part.
+
+
+```.py
+
