@@ -243,4 +243,68 @@ Given a positive real number, print its fractional part.
 
 
 ```.py
+a = float(input())
+a = a-int(a)
+print(a)
+```
+
+
+![](chp2_snakify_task10.jpg)
+
+
+## First digit after decimal point
+Given a positive real number, print its first digit to the right of the decimal point.
+
+
+```.py
+a = float(input())
+b = int((a * 10) % 10)
+print(b)
+```
+
+
+![](chp2_snakify_task11.jpg)
+
+
+## Car route
+A car can cover distance of N kilometers per day. How many days will it take to cover a route of length M kilometers? The program gets two numbers: N and M.
+
+
+```.py
+from math import ceil
+n = int(input())
+m = int(input())
+distance = m / n
+print(ceil(distance))
+```
+
+
+![](chp2_snakify_task12.jpg)
+
+
+## Day of week
+Let's count the days of the week as follows: 0 - Sunday, 1 - Monday, 2 - Tuesday, ..., 6 - Saturday. Given an integer K in the range 1 to 365, find the number of the day of the week for the K-th day of the year provided that this year's January 1 is Thursday.
+
+
+```.py
+a = int(input())
+print((a + 3) % 7)
+```
+
+![](chp2_snakify_task13.jpg)
+
+
+## Digital clock
+Given the integer N - the number of minutes that is passed since midnight - how many hours and minutes are displayed on the 24h digital clock?
+The program should print two numbers: the number of hours (between 0 and 23) and the number of minutes (between 0 and 59).
+
+
+```.py
+a = int(input())
+hour = a // 60
+minute = a % 60
+print(hour, minute)
+```
+
+![](chp2_snakify_task13.jpg)
 
