@@ -308,3 +308,33 @@ print(hour, minute)
 
 ![](chp2_snakify_task13.jpg)
 
+
+## Total cost
+A cupcake costs A dollars and B cents. Determine, how many dollars and cents should one pay for N cupcakes. A program gets three numbers: A, B, N. It should print two numbers: total cost in dollars and cents.
+
+
+```.py
+a = int(input())
+b = int(input())
+n = int(input())
+cost = n * (100 * a + b)
+print(cost // 100, cost % 100)
+```
+
+
+![](chp2_snakify_task15.jpg)
+
+
+## Century
+Given a year as a positive integer, print its century. Mind that the 20th century began on 1901 and ended on 2000.
+
+
+```.py
+a = int(input())
+century = (a - 1) // 100 + 1
+print(century)
+```
+
+
+![](chp2_snakify_task16.jpg)
+
