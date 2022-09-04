@@ -338,3 +338,23 @@ print(century)
 
 ![](chp2_snakify_task16.jpg)
 
+
+## Snail
+A snail goes up A feet during the day and falls B feet at night. How long does it take him to go up H feet?
+Given three integer numbers H, A and B (A > B), the program should output a number of days.
+
+
+```.py
+from math import ceil
+
+h = int(input())
+a = int(input())
+b = int(input())
+diff = a - b
+print(ceil((h - a) / (diff)) + 1)
+```
+
+
+![](chp2_snakify_task17.jp)
+
+
