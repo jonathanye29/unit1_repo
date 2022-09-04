@@ -1,5 +1,7 @@
 
 # Chapter 1
+Input, print and numbers
+
 
 ## Sum of 3 numbers
 Write a program that takes three numbers and prints their sum. Every number is given on a separate line.
@@ -117,6 +119,8 @@ print(desk1 + desk2 + desk3)
 
 
 # Chapter 2
+Integer and float numbers
+
 
 ## Last digit of integer
 Given an integer number, print its last digit.
@@ -355,6 +359,195 @@ print(ceil((h - a) / (diff)) + 1)
 ```
 
 
-![](chp2_snakify_task17.jp)
+![](chp2_snakify_task17.jpg)
+
+
+## Clock face - 1
+H hours, M minutes and S seconds are passed since the midnight (0 ≤ H < 12, 0 ≤ M < 60, 0 ≤ S < 60). Determine the angle (in degrees) of the hour hand on the clock face right now.
+
+
+```.py
+H = int(input())
+M = int(input())
+S = int(input())
+A = 360 / 12 * H
+A = A + (360 / 12 / 60 * M)
+A = A + (360 / 12 / 3600 * S)
+print(A)
+```
+
+
+![](chp2_snakify_task18.jpg)
+
+
+## Clock face - 2
+Hour hand turned by α degrees since the midnight. Determine the angle by which minute hand turned since the start of the current hour. Input and output in this problems are floating-point numbers.
+
+
+```.py
+a = float(input())
+a = (a % (360 / 12))
+print(a / 60 * 360 * 2)
+```
+
+
+![](chp2_snakify_task19.jpg)
+
+
+# Chapter 3
+Conditions: if, then, else
+
+
+## Is positive
+Given an integer, print "YES" if it's positive and print "NO" otherwise.
+
+
+```.py
+x = int(input())
+if x > 0:
+    print("YES")
+else:
+    print("NO")
+```
+
+
+![](chp3_snakify_task1.jpg)
+
+
+## Is odd
+Given an integer, print "YES" if it's odd and print "NO" otherwise.
+
+
+```.py
+a = int(input())
+if a % 2 == 0:
+    print("NO")
+else:
+    print("YES")
+```
+
+
+![](chp3_snakify_task2.jpg)
+
+
+## Is even
+Given an integer, print "YES" if it's even and print "NO" otherwise.
+
+
+```.py
+a = int(input())
+if a % 2 == 0:
+    print("YES")
+else:
+    print("NO")
+```
+
+
+![](chp3_snakify_task3.jpg)
+
+
+## Ends on seven
+Given an integer, print "YES" if it's last digit is 7 and print "NO" otherwise.
+
+
+```.py
+a = int(input())
+if a % 10 == 7:
+    print("YES")
+else:
+    print("NO")
+```
+
+
+![](chp3_snakify_task4.jpg)
+
+
+## Minimum of two numbers
+Given two integers, print the smaller value.
+
+
+```.py
+a = int(input())
+b = int(input())
+if a < b:
+    print(a)
+else:
+    print(b)
+```
+
+![](chp3_snakify_task5.jpg)
+
+
+## Are both odd
+Given two integers, print "YES" if they're both odd and print "NO" otherwise.
+
+
+```.py
+a = int(input())
+b = int(input())
+if a % 2 != 0 and b % 2 != 0:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task6.jpg)
+
+
+## At least one odd
+Given two integers, print "YES" if at least one of them is odd and print "NO" otherwise.
+
+
+```.py
+a = int(input())
+b = int(input())
+if a % 2 != 0 or b % 2 != 0:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task7.jpg)
+
+
+## Exactly one odd
+Given two integers, print "YES" if exactly one of them is odd and print "NO" otherwise.
+
+
+```.py
+a = int(input())
+b = int(input())
+if (a % 2 != 0 and b % 2 == 0) or (a % 2 == 0 and b % 2 != 0):
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task8.jpg)
+
+
+## Sign function
+For the given integer X print 1 if it's positive, -1 if it's negative, or 0 if it's equal to zero.
+Try to use the cascade if-elif-else for it.
+
+
+```.py
+a = int(input())
+if a > 0:
+    print('1')
+elif a < 0:
+    print('-1')
+else:
+    print('0')
+```
+
+
+![](chp3_snakify_task9.jpg)
+
+
+
 
 
