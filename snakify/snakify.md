@@ -548,6 +548,37 @@ else:
 ![](chp3_snakify_task9.jpg)
 
 
+## Numbers in ascending order
+Given three different integers, print YES if they're given in ascending order, print NO otherwise.
 
+
+```.py
+a = int(input())
+b = int(input())
+c = int(input())
+if a < b < c:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task10.jpg)
+
+
+## Is three digit
+Given an integer, print "YES" if it's a three-digit number and print "NO" otherwise.
+
+
+```.py
+number = int(input())
+if 100 <= number <= 999:
+    print("YES")
+else:
+    print("NO")
+```
+
+
+![](chp3_snakify_task11.jpg)
 
 
