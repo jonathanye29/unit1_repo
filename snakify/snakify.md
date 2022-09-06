@@ -582,3 +582,27 @@ else:
 ![](chp3_snakify_task11.jpg)
 
 
+## Minimum of three numbers
+Given three integers, print the smallest value.
+
+
+```.py
+a = int(input())
+b = int(input())
+c = int(input())
+if a <= b and b <= c:
+    print(a)
+elif b <= a and b <= c:
+    print(b)
+else:
+    print(c)
+```
+
+
+![](chp3_snakify_task12.jpg)
+
+
+
+
+
+
