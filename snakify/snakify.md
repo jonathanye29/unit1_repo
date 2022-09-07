@@ -751,3 +751,62 @@ Chess king moves horizontally, vertically or diagonally to any adjacent cell. Gi
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a king can go from the first cell to the second in one move, or NO otherwise.
 
 
+```.py
+tile1x = int(input())
+tile1y = int(input())
+tile2x = int(input())
+tile2y = int(input())
+s1 = abs(tile1x - tile2x)
+s2 = abs(tile1y - tile2y)
+
+if s1 <= 1 and s2 <=1:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task20.jpg)
+
+
+## Bishop moves
+In chess, the bishop moves diagonally, any number of squares. Given two different squares of the chessboard, determine whether a bishop can go from the first to the second in one move.
+The program receives as input four numbers from 1 to 8, specifying the column and row numbers of the starting square and the column and row numbers of the ending square. The program should output YES if a Bishop can go from the first square to the second in one move, or NO otherwise.
+
+
+```.py
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if abs(x1 - x2) == abs(y1 - y2):
+   print('YES')
+else:
+   print('NO')
+```
+
+
+![](chp3_snakify_task21.jpg)
+
+
+## Queen move
+Chess queen moves horizontally, vertically or diagonally to any number of cells. Given two different cells of the chessboard, determine whether a queen can go from the first cell to the second in one move.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a queen can go from the first cell to the second in one move, or NO otherwise.
+
+
+```.py
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task22.jpg)
+
+
+
