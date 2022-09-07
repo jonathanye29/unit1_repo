@@ -602,7 +602,152 @@ else:
 ![](chp3_snakify_task12.jpg)
 
 
+## Equal numbers
+Given three integers, determine how many of them are equal to each other. The program must print one of these numbers: 3 (if all are the same), 2 (if two of them are equal to each other and the third is different) or 0 (if all numbers are different).
 
 
+```.py
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a == b and a == c and b == c:
+    print("3")
+elif a == b or a == c or c == b:
+    print("2")
+else:
+    print("0")
+```
+
+
+![](chp3_snakify_task13.jpg)
+
+
+## Rook move
+Chess rook moves horizontally or vertically. Given two different cells of the chessboard, determine whether a rook can go from the first cell to the second in one move.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a rook can go from the first cell to the second in one move, or NO otherwise.
+
+
+```.py
+column1 = int(input())
+row1 = int(input())
+column2 = int(input())
+row2 = int(input())
+
+if (column1 == column2) or (row1 == row2):
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task14.jpg)
+
+
+## Chess board - black square
+Given a square of a chessboard. Print BLACK if it's black and print WHITE otherwise.
+The program receives two numbers from 1 to 8 each - the column and the row number of the square.
+
+
+```.py
+square1 = int(input())
+square2 = int(input())
+
+if (square1 % 2 != 0 and square2 % 2 == 0) or (square1 % 2 == 0 and square2 % 2 != 0):
+    print('WHITE')
+else:
+    print('BLACK')
+```
+
+
+![](chp3_snakify_task15.jpg)
+
+
+## Chess board - same color
+Given two cells of a chessboard. If they are painted in one color, print the word YES, and if in a different color - NO.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell.
+
+
+```.py
+tile1x = int(input())
+tile1y = int(input())
+tile2x = int(input())
+tile2y = int(input())
+
+if (tile1x + tile1y) % 2 == 0 and (tile2x + tile2y) % 2 == 0:
+    print('YES')
+elif (tile1x + tile1y) % 2 != 0 and (tile2x + tile2y) % 2 != 0:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task16.jpg)
+
+
+## Distance to closest point
+Given the coordinates of the three points A, B, and C on a line. Print a distance from the point A to closest point to it.
+
+
+```.py
+a = int(input())
+b = int(input())
+c = int(input())
+distance1 = abs(b - a)
+distance2 = abs(c - a)
+if distance1 < distance2:
+    print(distance1)
+if distance2 < distance1:
+    print(distance2)
+```
+
+
+![](chp3_snakify_task17.jpg)
+
+
+## Digits in ascending order
+Given a three-digit integer, print YES if its digits go in ascending order, print NO otherwise.
+
+
+```.py
+a = int(input())
+digit1 = a // 100
+digit2 = a % 100 // 10 
+digit3 = a % 100 % 10
+
+if digit1 < digit2 < digit3:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task18.jpg)
+
+
+## Four-digit palindrome
+A palindrome is a number which reads the same when read forward as it it does when read backward. Given a four-digit integer, print "YES" if it's a palindrome and print "NO" otherwise.
+
+
+```.py
+a = int(input())
+thousand = a // 1000
+hundred = a // 100 % 10
+ten = a % 1000 % 100 // 10
+one = a % 1000 % 100 % 10
+if thousand == one and hundred == ten:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task19.jpg)
+
+
+## King Move
+Chess king moves horizontally, vertically or diagonally to any adjacent cell. Given two different cells of the chessboard, determine whether a king can go from the first cell to the second in one move.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a king can go from the first cell to the second in one move, or NO otherwise.
 
 
