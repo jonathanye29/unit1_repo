@@ -28,4 +28,4 @@ while value < 100:
 ```
 
 
-![](sep5lesson.jpg)
+![](sep8lesson.jpg)
