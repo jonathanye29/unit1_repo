@@ -809,4 +809,150 @@ else:
 ![](chp3_snakify_task22.jpg)
 
 
+## Index of outlier
+Given three integers: two are equal to each other and the third one is different. Print the index number of this different one - 1, 2 or 3.
+
+
+```.py
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+
+if num1 == num2:
+    print('3')
+elif num1 == num3:
+    print('2')
+else:
+    print('1')
+```
+
+
+![](chp3_snakify_task23.jpg)
+
+
+## Knight move
+Chess knight moves like the letter L. It can move two cells horizontally and one cell vertically, or two cells vertically and one cells horizontally. Given two different cells of the chessboard, determine whether a knight can go from the first cell to the second in one move.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a knight can go from the first cell to the second in one move, or NO otherwise.
+
+
+```.py
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if abs(x1 - x2) == 1 and abs(y1 - y2) == 2 or abs(x1 - x2) == 2 and abs(y1 - y2) == 1:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task24.jpg)
+
+
+## Chocolate bar
+Chocolate bar has the form of a rectangle divided into n×m portions. Chocolate bar can be split into two rectangular parts by breaking it along a selected straight line on its pattern. Determine whether it is possible to split it so that one of the parts will have exactly k squares.
+The program reads three integers: n, m, and k. It should print YES or NO.
+
+
+```.py
+n = int(input())
+m = int(input())
+k = int(input())
+
+if ((k % n == 0) or (k % m == 0)) and k < n * m:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task25.jpg)
+
+
+## Leap year
+Given the year number. You need to check if this year is a leap year. If it is, print LEAP, otherwise print COMMON.
+The rules in Gregorian calendar are as follows:
+
+a year is a leap year if its number is exactly divisible by 4 and is not exactly divisible by 100
+a year is always a leap year if its number is exactly divisible by 400
+Warning. The words LEAP and COMMON should be printed all caps.
+
+
+```.py
+year = int(input())
+if ((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0):
+    print('LEAP')
+else:
+    print('COMMON')
+```
+
+
+![](chp3_snakify_task26.jpg)
+
+
+## Days in month
+Given a month - an integer from 1 (January) to 12 (December), print the number of days in it in the year 2017 (or any other non-leap year).
+
+
+```.py
+month = int(input())
+if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+    print('31')
+elif month == 2:
+    print('28')
+else:
+    print('30')
+```
+
+
+![](chp3_snakify_task27.jpg)
+
+
+## Next day
+Given the month (an integer from 1 to 12) and the day in it (an integer from 1 to 31) in the year 2017 (or in any other common year), print the month and the day of the next day to it. The first test corresponds to March 30 and March 31. The second test corresponds to March 31 and April 1.
+
+
+```.py
+a = int(input())
+b = int(input())
+if a == 1 or a == 3 or a == 5 or a == 7 or a == 8 or a == 10 or a == 12:
+    day = 31
+elif a == 2:
+    day = 28
+else:
+    day = 30
+if day == 31:
+    if a == 12 and b == 31:
+        print("1")
+        print("1")
+    elif b == 31:
+        print(a + 1)
+        print(1)
+    else:
+        print(a)
+        print(b + 1)
+if day == 30:
+    if b == 30:
+        print(a + 1)
+        print(1)
+    else:
+        print(a)
+        print(b + 1)
+if day == 28:
+    if b == 28:
+        print(a + 1)
+        print(1)
+    else:
+        print(a)
+        print(b + 1)
+```
+
+
+![](chp3_snakify_task28.jpg)
+
+
+## Linear equation
+Write a program that solves a linear equation ax = b in integers. Given two integers a and b (a may be zero), print a single integer root if it exists and print "no solution" or "many solutions" otherwise.
+
 
