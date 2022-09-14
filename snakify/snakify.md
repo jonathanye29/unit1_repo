@@ -956,3 +956,47 @@ if day == 28:
 Write a program that solves a linear equation ax = b in integers. Given two integers a and b (a may be zero), print a single integer root if it exists and print "no solution" or "many solutions" otherwise.
 
 
+```.py
+a = int(input())
+b = int(input())
+if a == 0 and b == 0:
+    print('many solutions')
+elif a == 0 and b != 0 or b % a != 0:
+    print('no solution')
+else:
+    print(b // a)
+```
+
+
+![](chp3_snakify_task29.jpg)
+
+
+## Vertices of Rectangle
+Given integer coordinates of three vertices of a rectangle whose sides are parallel to the coordinate axes, find the coordinates of the fourth vertex of the rectangle. In the first test the three given vertices are (1, 4), (1, 6), (7, 4). The fourth vertex is thus (7, 6).
+
+
+```.py
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+x3 = int(input())
+y3 = int(input())
+if x1 == x2:
+    x4 = x3
+elif x1 == x3:
+    x4 = x2
+else:
+  x4 = x1
+if y1 == y2:
+    y4 = y3
+elif y1 == y3:
+    y4 = y2
+else:
+    y4 = y1
+print(x4)
+print(y4)
+```
+
+
+![](chp3_snakify_task30.jpg)
