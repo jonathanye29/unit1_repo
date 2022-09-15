@@ -27,3 +27,9 @@ for locker in range(1, number_lockers, 1):
 
 
 ![](prgmtask1_task1.jpg)
+
+
+Flow chart:
+
+![](prgmtask1_task1flowchart.jpg)
+
