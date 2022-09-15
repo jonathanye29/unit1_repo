@@ -1,4 +1,3 @@
-
 # Chapter 1
 Input, print and numbers
 
@@ -1000,3 +999,64 @@ print(y4)
 
 
 ![](chp3_snakify_task30.jpg)
+
+
+## Sort three numbers
+Given three integers, print them in ascending order.
+
+
+```.py
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a > b:
+    a, b = b, a
+if a > c:
+    a, c = c, a
+if b > c:
+    b, c = c, b
+
+print(a)
+print(b)
+print(c)
+```
+
+
+![](chp3_snakify_task31.jpg)
+
+
+## White pawn move
+A white chess pawn moves up vertically one square at a time. An exception is a pawn on a row #2: it can move either one or two squares up. In addition, a white chess pawn captures diagonally up one square to the left or right. A white chess pawn can never occur on a row #1.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first square, and then the last two - for the second square. The program should print YES if a white pawn can possibly move from the first square to the second square in one move in some game - either by move or by capture. The program should print NO otherwise. The first four tests correspond to the green arrows on the picture below.
+
+
+```.py
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+if y1 == 1 and y2 == y1 + 1:
+    print('NO')
+elif x1 == x2 and y2 == y1 + 1 :
+    print('YES')
+elif y1 == 2 and y2 == 4 and x2 == x1:
+    print('YES')
+elif (x2 == x1 + 1 or x2 == x1 - 1) and y2 == y1 + 1:
+    print('YES')
+else:
+    print('NO')
+```
+
+
+![](chp3_snakify_task32.jpg)
+
+
+# Chapter 4
+For loop with range
+
+
+## Count to N
+Given an integer N, print all the numbers from 1 to N.
+
