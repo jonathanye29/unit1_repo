@@ -7,7 +7,7 @@ Create a program and the flow diagram that shows the colors of all the lockers f
 ```.py
 number_lockers = 2400
 
-for locker in range(1, number_lockers, 1):
+for locker in range(1, number_lockers + 1, 1):
     color_code = locker % 4
     if color_code == 0:
         color = "Red"
