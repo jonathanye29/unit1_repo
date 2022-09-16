@@ -1060,3 +1060,51 @@ For loop with range
 ## Count to N
 Given an integer N, print all the numbers from 1 to N.
 
+
+```.py
+N = int(input())
+for i in range (1, N + 1):
+    print(i)
+```
+
+
+![](chp4_snakify_task1.jpg)
+
+
+## Series - 1
+Given two integers A and B (A ≤ B). Print all numbers from A to B inclusively.
+
+
+```.py
+a = int(input())
+b = int(input())
+
+for i in range (a , b + 1):
+    print(i)
+```
+
+
+![](chp4_snakify_task2.jpg)
+
+
+## First N odd, ascending
+Given an integer N, print all the odd numbers from 1 to N in ascending order.
+
+
+```.py
+n = int(input())
+
+for i in range(1, n + 1, 2):
+    print(i)
+```
+
+
+![](chp4_snakify_task3.jpg)
+
+
+## Series - 2
+Given two integers A and B. Print all numbers from A to B inclusively, in ascending order, if A < B, or in descending order, if A ≥ B.
+
+
+```.py
+
