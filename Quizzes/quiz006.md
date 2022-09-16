@@ -3,7 +3,7 @@ Given a string, creat a program that produces the sum of the characters in the s
 
 ```.py
 sum = 0
-word = input()
+word = input("Input Word: ")
 for l in word:
     code = ord(l)
     if code < 91:
