@@ -1145,5 +1145,53 @@ else:
 ![](chp4_snakify_task5.jpg)
 
 
+## Sum of ten numbers
+10 numbers are given in the input. Read them and print their sum. Use as few variables as you can.
+
+
+```.py
+x = 0
+for i in range(10):
+    x += int(input())
+print(x)
+```
+
+
+![](chp4_snakify_task6.jpg)
+
+
+## Sum of N numbers
+N numbers are given in the input. Read them and print their sum.
+The first line of input contains the integer N, which is the number of integers to follow. Each of the next N lines contains one integer. Print the sum of these N integers.
+
+
+```.py
+n = int(input())
+ans = 0
+for i in range(n):
+    ans += int(input())
+print(ans)
+```
+
+
+![](chp4_snakify_task7.jpg)
+
+
+## Product of N numbers
+N numbers are given in the input. Read them and print their product.
+The first line of input contains a positive integer N: the number of integers to follow. Each of the next N lines contains one integer. Print the product of these N integers.
+
+
+```.py
+n = int(input())
+product = 1
+for i in range(n):
+    product *= int(input())
+print(product)
+```
+
+![](chp4_snakify_task8.jpg)
+
+
 
 
