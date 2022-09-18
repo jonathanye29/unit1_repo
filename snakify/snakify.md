@@ -1126,4 +1126,24 @@ else:
 ![](chp4_snakify_task4.jpg)
 
 
+## First N even, descending
+Given an integer N, print all the even numbers from 0 to N in descending order.
+
+
+```.py
+n = int(input())
+
+if n % 2== 0:
+    for i in range(n, -1, -2):
+        print(i)
+else:
+    for i in range(n - 1, -1, -2):
+        print(i)
+```
+
+
+![](chp4_snakify_task5.jpg)
+
+
+
 
