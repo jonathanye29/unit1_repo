@@ -56,5 +56,34 @@ if locker_number <= 2400:
  
  
  ![](prgmtask1_task2.jpg)
+ 
+ 
+ ## Task 3
+ 
+ 
+ ```.py
+ color_input = input("What color (red, white, yellow, or blue) is the locker? ")
+
+for locker in range(1, 2401):
+    number = locker % 4
+    if color_input == "red":
+        if number == 0:
+            print(locker)
+    if color_input == "white":
+        if number == 1:
+            print(locker)
+    if color_input == "yellow":
+        if number == 2:
+            print(locker)
+    if color_input == "blue":
+        if number == 3:
+            print(locker)
+ ```
+ 
+ 
+ ![](prgmtask1_task3.jpg)
+ 
+ 
+ ## Task 4
 
 
