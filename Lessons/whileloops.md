@@ -24,4 +24,4 @@ else:
 ```
 
 
-![](sep5lesson.jpg)
+![](whileloops.jpg)
