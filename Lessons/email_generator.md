@@ -11,3 +11,6 @@ grad = int(input("Please type your graduation year (ex: 2020): "))
 
 print(f"Your UWC ISAK Email: {grad}.{firstname}.{lastname}.{random}@uwcisak.jp")
 ```
+
+
+![](email_generator.jpg)
