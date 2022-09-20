@@ -99,13 +99,14 @@ Main()
 
 
 ## CSV File
-
-date,charge,duration
+```.py
+"""date,charge,duration
 12.9.22,8.878kWh,12:32:36
 15.9.22,3.533kWh,5:02:23
 17.9.22,6.828kWh,9:41:46
 18.9.22,5.425kWh,7:43:35
-
+"""
+```
 
 ## Results
 ![](ev_calculator.jpg)
