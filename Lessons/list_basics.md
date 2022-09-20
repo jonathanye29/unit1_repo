@@ -1,4 +1,4 @@
-# For Loops
+# List Basics
 
 ```.py
 x = [[3, 8], ['bob', '30'], 5, 'alice']
