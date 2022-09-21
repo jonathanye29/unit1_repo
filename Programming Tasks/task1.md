@@ -113,3 +113,26 @@ for a in range(c):
 
 ![](prgmtask1_task4.jpg)
 
+
+## Computational Thinking
+
+### Question 1: What is the most powerful computer? Glad you asked. Watch this video about Sierra Computer. Describe below points that surprised you the most.
+
+The most powerful computer in the world right now is Frontier in the US. 
+
+What surprised me in the video:
+1. They will cut off Seirra from any computer network and turn it into a little island of processing power and the operations will become classified
+2. Seirra will be able to simulate situations and any questions the military has about their nuclear arsenal
+3. There is already another supercomputer being built, El Capitan, and it will succeed Seirra and do even more complex operations
+
+
+### Question 2: Supercomputers are currently used to investigate solutions to real life problems from cancer research, Ai, economics, or brain simulation. Military uses are also one major force behind the development of these machines. Analyze the benefits and possible drawbacks of developing supercomputers in our modern world? Should we do it?
+
+Supercomputers provide many benefits, like the ability to analyze and simulate many different aspects of our lives from cancer research, Ai, economics, to brain simulation. These operations supercomputers carry out are beneficial because it is able to aid us in our research and help develop our technology in ways that can benefit everyone. I also think it is beneficial that militaries utilize supercomputers in their research. Instead of having to actually test out destructive weapons like nuclear weapons in the real world, they can simulate them using supercomputers. With the various benefits supercomputers provide us, there are also various drawbacks. For example, supercomputers require lots of energy in order for it to run, requires trained staff, and takes up lots of space. Further, they are also very expensive to build and maintain. In my opinion, I think we should continue to use supercomputers because they will be able to provide many more benefits in the future as they continue to develop.
+
+
+### Question 3: Identify the most advanced computer in your Country (What, specs, location, uses). 
+
+Frontier is the most advanced computer in my country, United States. It is located at the Department of Energy’s Oak Ridge National Laboratory. It has optimized 3rd Gen AMD EPYC CPUs for HPC and AI, and AMD Instinct 250X accelerators. There are 74 cabinets, AMD Infinity Fabric CPU-GPU interconnect, multiple Slingshot NICs providing 100 GB/s network bandwidth (slingshot network which provides adaptive routing, congestion management and quality of service), 2-4x performance and capacity of Summit’s I/O subsystem (Fontier will have near node storage like Summit), and it has a peak performance of 1.6 EF.
+
+
