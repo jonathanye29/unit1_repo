@@ -1193,5 +1193,110 @@ print(product)
 ![](chp4_snakify_task8.jpg)
 
 
+## Sum of cubes
+For the given integer N calculate the following sum: 1^3+2^3+…+N^3
 
 
+```.py
+n = int(input())
+sum = 0
+for i in range(1, n + 1):
+    sum += i ** 3
+print(sum)
+```
+
+
+![](chp4_snakify_task9.jpg)
+
+
+## Factorial
+For the given integer n calculate the value n!. Don't use math module in this exercise.
+
+
+```.py
+n = int(input())
+product = 1
+for i in range(1, n + 1):
+    product *= i
+print(product)
+```
+
+
+![](chp4_snakify_task10.jpg)
+
+
+## The number of zeros
+Given N numbers: the first number in the input is N, after that N integers are given. Count the number of zeros among the given integers and print it.
+You need to count the number of numbers that are equal to zero, not the number of zero digits.
+
+
+```.py
+n = int(input())
+count = 0
+for i in range(n):
+    if int(input())  == 0:
+        count += 1
+print(count)
+```
+
+
+![](chp4_snakify_task11.jpg)
+
+
+## Adding factorials
+Given an integer n, print the sum 1!+2!+3!+...+n!.
+
+
+```.py
+n = int(input())
+product = 1
+sum = 0
+for i in range(1, n + 1):
+    product *= i
+    sum += product
+print(sum)
+```
+
+
+![](chp4_snakify_task12.jpg)
+
+
+## Squares in range
+Given two integers A and B, print squares of all integer numbers between them, as shown below. There shouldn't be any spaces around * and =. The sep argument of the function print() may help you with that.
+
+
+```.py
+a = int(input())
+b = int(input())
+for i in range(a, b + 1):
+    print(i, '*', i, '=', i**2, sep = '')
+```
+
+
+![](chp4_snakify_task13.jpg)
+
+
+## Ladder
+For given integer n ≤ 9 print a ladder of n steps. The k-th step consists of the integers from 1 to k without spaces between them.
+
+
+```.py
+n = int(input())
+for i in range(1, n + 1):
+    for o in range(1, i + 1):
+        print(o, end= "")
+    print()
+```
+ 
+
+![](chp4_snakify_task14.jpg)
+
+
+## Is prime
+A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. Given an integer N > 1, print PRIME if it's prime and print COMPOSITE otherwise.
+
+
+```.py
+
+ 
+ 
