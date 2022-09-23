@@ -1297,6 +1297,18 @@ A prime number is a natural number greater than 1 that has no positive divisors 
 
 
 ```.py
+n = int(input())
+result = 'PRIME'
+for i in range(2, n - 1):
+    if n % i == 0:
+        result = 'COMPOSITE'
+print(result)
+```
 
+
+![](chp4_snakify_task15.jpg)
+
+
+## 
  
  
