@@ -25,7 +25,9 @@ I will to design and make a digital ledger for a client who is struggling to kee
 
 Maker (MKR) is a smart contract platform built on the Ethereum blockchain that aims to solve volatility issues for the crypto market. It is the basis for a new-generation blockchain-based banking system that allows for faster and simpler international payments and peer-to-peer transactions. Maker aims to unlock the potential of decentralized finance by building an inclusive platform for economic empowerment that gives everyone equal access to the global financial marketplace.
 
-Citation: https://www.coinbase.com/price/maker
+Citations: 
+https://www.coinbase.com/price/maker
+https://www.abra.com/cryptocurrency/maker/#:~:text=What%20is%20Maker%20coin%3F,peer%2Dto%2Dpeer%20transactions.
 
 Justify the tools/structure of your solution
 
