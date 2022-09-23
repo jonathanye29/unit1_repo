@@ -125,6 +125,8 @@ What surprised me in the video:
 2. Seirra will be able to simulate situations and any questions the military has about their nuclear arsenal
 3. There is already another supercomputer being built, El Capitan, and it will succeed Seirra and do even more complex operations
 
+Citation: https://www.olcf.ornl.gov/frontier/
+
 
 ### Question 2: Supercomputers are currently used to investigate solutions to real life problems from cancer research, Ai, economics, or brain simulation. Military uses are also one major force behind the development of these machines. Analyze the benefits and possible drawbacks of developing supercomputers in our modern world? Should we do it?
 
