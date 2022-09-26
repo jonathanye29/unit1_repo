@@ -13,8 +13,6 @@ c = int(input())
 print(a+b+c)
 ```
 
-![](chp1_snakify_task1.jpg)
-
 
 ## Hi John
 Write a program that greets the person by printing the word "Hi" and the name of the person. See the examples below.
@@ -25,9 +23,6 @@ print("Hi " + input())
 ```
 
 
-![](chp1_snakify_task2.jpg)
-
-
 ## Square
 Write a program that takes a number and print its square.
 
@@ -36,9 +31,6 @@ Write a program that takes a number and print its square.
 a = int(input())
 print(a * a)
 ```
-
-
-![](chp1_snakify_task3.jpg)
 
 
 ## Area of right-angled triangle
@@ -52,9 +44,6 @@ print(b * h / 2)
 ```
 
 
-![](chp1_snakify_task4.jpg)
-
-
 ## Hello, Harry!
 Write a program that greets the user by printing the word "Hello", a comma, the name of the user and an exclamation mark after it. See the examples below.
 
@@ -63,8 +52,6 @@ Write a program that greets the user by printing the word "Hello", a comma, the 
 name = input()
 print("Hello, " + name + "!")
 ```
-
-![](chp1_snakify_task5.jpg)
 
 
 ## Two timestamps
@@ -92,8 +79,6 @@ time2 = h2 + m2 + s2
 print(time2 - time1)
 ```
 
-![](chp1_snakify_task6.jpg)
-
 
 ## School desks
 A school decided to replace the desks in three classrooms. Each desk sits two students. Given the number of students in each class, print the smallest possible number of desks that can be purchased.
@@ -114,8 +99,6 @@ desk3 = class3 // 2 + class3 % 2
 print(desk1 + desk2 + desk3)
 ```
 
-![](chp1_snakify_task7.jpg)
-
 
 # Chapter 2
 Integer and float numbers
@@ -131,9 +114,6 @@ print(a % 10)
 ```
 
 
-![](chp2_snakify_task1.jpg)
-
-
 ## Two digits
 Given a two-digit number, print its digits separately.
 
@@ -142,9 +122,6 @@ Given a two-digit number, print its digits separately.
 a = int(input())
 print(a // 10 , a % 10)
 ```
-
-
-![](chp2_snakify_task2.jpg)
 
 
 ## Swap digits
@@ -157,9 +134,6 @@ print(str(a % 10) + str(a // 10))
 ```
 
 
-![](chp2_snakify_task3.jpg)
-
-
 ## Last two digits
 Given an integer number, print its last two digits.
 
@@ -167,9 +141,6 @@ Given an integer number, print its last two digits.
 ```.py
 print(int(input()) % 100)
 ```
-
-
-![](chp2_snakify_task4.jpg)
 
 
 ## Tens digit
@@ -180,9 +151,6 @@ Given an integer. Print its tens digit.
 a = int(input())
 print(a // 10 % 10)
 ```
-
-
-![](chp2_snakify_task5.jpg)
 
 
 ## Sum of digits
@@ -198,9 +166,6 @@ print(a + b + c)
 ```
 
 
-![](chp2_snakify_task6.jpg)
-
-
 ## Reverse three digits
 Given a three-digit integer number, print its digits in a reversed order.
 
@@ -209,9 +174,6 @@ Given a three-digit integer number, print its digits in a reversed order.
 a = int(input())
 print(str(a % 10) + str(a // 10 % 10) + str(a // 100))
 ```
-
-
-![](chp2_snakify_task7.jpg)
 
 
 ## Merge two numbers
@@ -225,9 +187,6 @@ print(str(a // 10) + str(b // 10) + str(a % 10) + str(b % 10))
 ```
 
 
-![](chp2_snakify_task8.jpg)
-
-
 ## Cyclic rotation
 Given a four-digit integer number, perform its cyclic rotation by two digits, as shown in the tests below.
 
@@ -236,9 +195,6 @@ Given a four-digit integer number, perform its cyclic rotation by two digits, as
 a = int(input())
 print(str(a % 100) + str(a // 100))
 ```
-
-
-![](chp2_snakify_task9.jpg)
 
 
 ## Fractional part
@@ -252,9 +208,6 @@ print(a)
 ```
 
 
-![](chp2_snakify_task10.jpg)
-
-
 ## First digit after decimal point
 Given a positive real number, print its first digit to the right of the decimal point.
 
@@ -264,9 +217,6 @@ a = float(input())
 b = int((a * 10) % 10)
 print(b)
 ```
-
-
-![](chp2_snakify_task11.jpg)
 
 
 ## Car route
@@ -282,9 +232,6 @@ print(ceil(distance))
 ```
 
 
-![](chp2_snakify_task12.jpg)
-
-
 ## Day of week
 Let's count the days of the week as follows: 0 - Sunday, 1 - Monday, 2 - Tuesday, ..., 6 - Saturday. Given an integer K in the range 1 to 365, find the number of the day of the week for the K-th day of the year provided that this year's January 1 is Thursday.
 
@@ -293,8 +240,6 @@ Let's count the days of the week as follows: 0 - Sunday, 1 - Monday, 2 - Tuesday
 a = int(input())
 print((a + 3) % 7)
 ```
-
-![](chp2_snakify_task13.jpg)
 
 
 ## Digital clock
@@ -308,8 +253,6 @@ hour = a // 60
 minute = a % 60
 print(hour, minute)
 ```
-
-![](chp2_snakify_task13.jpg)
 
 
 ## Total cost
@@ -325,9 +268,6 @@ print(cost // 100, cost % 100)
 ```
 
 
-![](chp2_snakify_task15.jpg)
-
-
 ## Century
 Given a year as a positive integer, print its century. Mind that the 20th century began on 1901 and ended on 2000.
 
@@ -337,9 +277,6 @@ a = int(input())
 century = (a - 1) // 100 + 1
 print(century)
 ```
-
-
-![](chp2_snakify_task16.jpg)
 
 
 ## Snail
@@ -358,9 +295,6 @@ print(ceil((h - a) / (diff)) + 1)
 ```
 
 
-![](chp2_snakify_task17.jpg)
-
-
 ## Clock face - 1
 H hours, M minutes and S seconds are passed since the midnight (0 ≤ H < 12, 0 ≤ M < 60, 0 ≤ S < 60). Determine the angle (in degrees) of the hour hand on the clock face right now.
 
@@ -376,9 +310,6 @@ print(A)
 ```
 
 
-![](chp2_snakify_task18.jpg)
-
-
 ## Clock face - 2
 Hour hand turned by α degrees since the midnight. Determine the angle by which minute hand turned since the start of the current hour. Input and output in this problems are floating-point numbers.
 
@@ -388,9 +319,6 @@ a = float(input())
 a = (a % (360 / 12))
 print(a / 60 * 360 * 2)
 ```
-
-
-![](chp2_snakify_task19.jpg)
 
 
 # Chapter 3
@@ -410,9 +338,6 @@ else:
 ```
 
 
-![](chp3_snakify_task1.jpg)
-
-
 ## Is odd
 Given an integer, print "YES" if it's odd and print "NO" otherwise.
 
@@ -424,9 +349,6 @@ if a % 2 == 0:
 else:
     print("YES")
 ```
-
-
-![](chp3_snakify_task2.jpg)
 
 
 ## Is even
@@ -442,9 +364,6 @@ else:
 ```
 
 
-![](chp3_snakify_task3.jpg)
-
-
 ## Ends on seven
 Given an integer, print "YES" if it's last digit is 7 and print "NO" otherwise.
 
@@ -456,9 +375,6 @@ if a % 10 == 7:
 else:
     print("NO")
 ```
-
-
-![](chp3_snakify_task4.jpg)
 
 
 ## Minimum of two numbers
@@ -473,8 +389,6 @@ if a < b:
 else:
     print(b)
 ```
-
-![](chp3_snakify_task5.jpg)
 
 
 ## Are both odd
@@ -491,9 +405,6 @@ else:
 ```
 
 
-![](chp3_snakify_task6.jpg)
-
-
 ## At least one odd
 Given two integers, print "YES" if at least one of them is odd and print "NO" otherwise.
 
@@ -508,9 +419,6 @@ else:
 ```
 
 
-![](chp3_snakify_task7.jpg)
-
-
 ## Exactly one odd
 Given two integers, print "YES" if exactly one of them is odd and print "NO" otherwise.
 
@@ -523,9 +431,6 @@ if (a % 2 != 0 and b % 2 == 0) or (a % 2 == 0 and b % 2 != 0):
 else:
     print('NO')
 ```
-
-
-![](chp3_snakify_task8.jpg)
 
 
 ## Sign function
@@ -544,9 +449,6 @@ else:
 ```
 
 
-![](chp3_snakify_task9.jpg)
-
-
 ## Numbers in ascending order
 Given three different integers, print YES if they're given in ascending order, print NO otherwise.
 
@@ -562,9 +464,6 @@ else:
 ```
 
 
-![](chp3_snakify_task10.jpg)
-
-
 ## Is three digit
 Given an integer, print "YES" if it's a three-digit number and print "NO" otherwise.
 
@@ -576,9 +475,6 @@ if 100 <= number <= 999:
 else:
     print("NO")
 ```
-
-
-![](chp3_snakify_task11.jpg)
 
 
 ## Minimum of three numbers
@@ -596,9 +492,6 @@ elif b <= a and b <= c:
 else:
     print(c)
 ```
-
-
-![](chp3_snakify_task12.jpg)
 
 
 ## Equal numbers
@@ -619,9 +512,6 @@ else:
 ```
 
 
-![](chp3_snakify_task13.jpg)
-
-
 ## Rook move
 Chess rook moves horizontally or vertically. Given two different cells of the chessboard, determine whether a rook can go from the first cell to the second in one move.
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a rook can go from the first cell to the second in one move, or NO otherwise.
@@ -640,9 +530,6 @@ else:
 ```
 
 
-![](chp3_snakify_task14.jpg)
-
-
 ## Chess board - black square
 Given a square of a chessboard. Print BLACK if it's black and print WHITE otherwise.
 The program receives two numbers from 1 to 8 each - the column and the row number of the square.
@@ -657,9 +544,6 @@ if (square1 % 2 != 0 and square2 % 2 == 0) or (square1 % 2 == 0 and square2 % 2 
 else:
     print('BLACK')
 ```
-
-
-![](chp3_snakify_task15.jpg)
 
 
 ## Chess board - same color
@@ -682,9 +566,6 @@ else:
 ```
 
 
-![](chp3_snakify_task16.jpg)
-
-
 ## Distance to closest point
 Given the coordinates of the three points A, B, and C on a line. Print a distance from the point A to closest point to it.
 
@@ -700,9 +581,6 @@ if distance1 < distance2:
 if distance2 < distance1:
     print(distance2)
 ```
-
-
-![](chp3_snakify_task17.jpg)
 
 
 ## Digits in ascending order
@@ -722,9 +600,6 @@ else:
 ```
 
 
-![](chp3_snakify_task18.jpg)
-
-
 ## Four-digit palindrome
 A palindrome is a number which reads the same when read forward as it it does when read backward. Given a four-digit integer, print "YES" if it's a palindrome and print "NO" otherwise.
 
@@ -740,9 +615,6 @@ if thousand == one and hundred == ten:
 else:
     print('NO')
 ```
-
-
-![](chp3_snakify_task19.jpg)
 
 
 ## King Move
@@ -765,9 +637,6 @@ else:
 ```
 
 
-![](chp3_snakify_task20.jpg)
-
-
 ## Bishop moves
 In chess, the bishop moves diagonally, any number of squares. Given two different squares of the chessboard, determine whether a bishop can go from the first to the second in one move.
 The program receives as input four numbers from 1 to 8, specifying the column and row numbers of the starting square and the column and row numbers of the ending square. The program should output YES if a Bishop can go from the first square to the second in one move, or NO otherwise.
@@ -785,9 +654,6 @@ else:
 ```
 
 
-![](chp3_snakify_task21.jpg)
-
-
 ## Queen move
 Chess queen moves horizontally, vertically or diagonally to any number of cells. Given two different cells of the chessboard, determine whether a queen can go from the first cell to the second in one move.
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a queen can go from the first cell to the second in one move, or NO otherwise.
@@ -803,9 +669,6 @@ if abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2:
 else:
     print('NO')
 ```
-
-
-![](chp3_snakify_task22.jpg)
 
 
 ## Index of outlier
@@ -826,9 +689,6 @@ else:
 ```
 
 
-![](chp3_snakify_task23.jpg)
-
-
 ## Knight move
 Chess knight moves like the letter L. It can move two cells horizontally and one cell vertically, or two cells vertically and one cells horizontally. Given two different cells of the chessboard, determine whether a knight can go from the first cell to the second in one move.
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a knight can go from the first cell to the second in one move, or NO otherwise.
@@ -846,9 +706,6 @@ else:
 ```
 
 
-![](chp3_snakify_task24.jpg)
-
-
 ## Chocolate bar
 Chocolate bar has the form of a rectangle divided into n×m portions. Chocolate bar can be split into two rectangular parts by breaking it along a selected straight line on its pattern. Determine whether it is possible to split it so that one of the parts will have exactly k squares.
 The program reads three integers: n, m, and k. It should print YES or NO.
@@ -864,9 +721,6 @@ if ((k % n == 0) or (k % m == 0)) and k < n * m:
 else:
     print('NO')
 ```
-
-
-![](chp3_snakify_task25.jpg)
 
 
 ## Leap year
@@ -887,9 +741,6 @@ else:
 ```
 
 
-![](chp3_snakify_task26.jpg)
-
-
 ## Days in month
 Given a month - an integer from 1 (January) to 12 (December), print the number of days in it in the year 2017 (or any other non-leap year).
 
@@ -903,9 +754,6 @@ elif month == 2:
 else:
     print('30')
 ```
-
-
-![](chp3_snakify_task27.jpg)
 
 
 ## Next day
@@ -948,9 +796,6 @@ if day == 28:
 ```
 
 
-![](chp3_snakify_task28.jpg)
-
-
 ## Linear equation
 Write a program that solves a linear equation ax = b in integers. Given two integers a and b (a may be zero), print a single integer root if it exists and print "no solution" or "many solutions" otherwise.
 
@@ -965,9 +810,6 @@ elif a == 0 and b != 0 or b % a != 0:
 else:
     print(b // a)
 ```
-
-
-![](chp3_snakify_task29.jpg)
 
 
 ## Vertices of Rectangle
@@ -998,9 +840,6 @@ print(y4)
 ```
 
 
-![](chp3_snakify_task30.jpg)
-
-
 ## Sort three numbers
 Given three integers, print them in ascending order.
 
@@ -1021,9 +860,6 @@ print(a)
 print(b)
 print(c)
 ```
-
-
-![](chp3_snakify_task31.jpg)
 
 
 ## White pawn move
@@ -1050,9 +886,6 @@ else:
 ```
 
 
-![](chp3_snakify_task32.jpg)
-
-
 # Chapter 4
 For loop with range
 
@@ -1068,9 +901,6 @@ for i in range (1, N + 1):
 ```
 
 
-![](chp4_snakify_task1.jpg)
-
-
 ## Series - 1
 Given two integers A and B (A ≤ B). Print all numbers from A to B inclusively.
 
@@ -1084,9 +914,6 @@ for i in range (a , b + 1):
 ```
 
 
-![](chp4_snakify_task2.jpg)
-
-
 ## First N odd, ascending
 Given an integer N, print all the odd numbers from 1 to N in ascending order.
 
@@ -1097,9 +924,6 @@ n = int(input())
 for i in range(1, n + 1, 2):
     print(i)
 ```
-
-
-![](chp4_snakify_task3.jpg)
 
 
 ## Series - 2
@@ -1123,9 +947,6 @@ else:
 ```
 
 
-![](chp4_snakify_task4.jpg)
-
-
 ## First N even, descending
 Given an integer N, print all the even numbers from 0 to N in descending order.
 
@@ -1142,9 +963,6 @@ else:
 ```
 
 
-![](chp4_snakify_task5.jpg)
-
-
 ## Sum of ten numbers
 10 numbers are given in the input. Read them and print their sum. Use as few variables as you can.
 
@@ -1155,9 +973,6 @@ for i in range(10):
     x += int(input())
 print(x)
 ```
-
-
-![](chp4_snakify_task6.jpg)
 
 
 ## Sum of N numbers
@@ -1174,9 +989,6 @@ print(ans)
 ```
 
 
-![](chp4_snakify_task7.jpg)
-
-
 ## Product of N numbers
 N numbers are given in the input. Read them and print their product.
 The first line of input contains a positive integer N: the number of integers to follow. Each of the next N lines contains one integer. Print the product of these N integers.
@@ -1189,8 +1001,6 @@ for i in range(n):
     product *= int(input())
 print(product)
 ```
-
-![](chp4_snakify_task8.jpg)
 
 
 ## Sum of cubes
@@ -1206,9 +1016,6 @@ print(sum)
 ```
 
 
-![](chp4_snakify_task9.jpg)
-
-
 ## Factorial
 For the given integer n calculate the value n!. Don't use math module in this exercise.
 
@@ -1220,9 +1027,6 @@ for i in range(1, n + 1):
     product *= i
 print(product)
 ```
-
-
-![](chp4_snakify_task10.jpg)
 
 
 ## The number of zeros
@@ -1240,9 +1044,6 @@ print(count)
 ```
 
 
-![](chp4_snakify_task11.jpg)
-
-
 ## Adding factorials
 Given an integer n, print the sum 1!+2!+3!+...+n!.
 
@@ -1258,9 +1059,6 @@ print(sum)
 ```
 
 
-![](chp4_snakify_task12.jpg)
-
-
 ## Squares in range
 Given two integers A and B, print squares of all integer numbers between them, as shown below. There shouldn't be any spaces around * and =. The sep argument of the function print() may help you with that.
 
@@ -1271,9 +1069,6 @@ b = int(input())
 for i in range(a, b + 1):
     print(i, '*', i, '=', i**2, sep = '')
 ```
-
-
-![](chp4_snakify_task13.jpg)
 
 
 ## Ladder
@@ -1289,9 +1084,6 @@ for i in range(1, n + 1):
 ```
  
 
-![](chp4_snakify_task14.jpg)
-
-
 ## Is prime
 A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. Given an integer N > 1, print PRIME if it's prime and print COMPOSITE otherwise.
 
@@ -1306,9 +1098,206 @@ print(result)
 ```
 
 
-![](chp4_snakify_task15.jpg)
+## Print primes in range
+A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. Given two integers A and B, print all prime numbers between them, inclusively.
 
 
-## 
+```.py
+a = int(input())
+b = int(input())
+for i in range(a, b + 1):
+    if i > 1:
+        for j in range(2, i):
+            if (i % j) == 0:
+                break
+        else:
+            print(i)
+```
+
+
+## Number of primes in range
+A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. Given two integers A and B, print the number of primes between them, inclusively.
+
+
+```.py
+a = int(input())
+b = int(input())
+def prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+count = 0
+for i in range(a, b + 1):
+    if prime(i):
+        count += 1
+print(count)
+```
+
+
+## Lost card
+There was a set of cards with numbers from 1 to N. One of the card is now lost. Determine the number on that lost card given the numbers for the remaining cards.
+Given a number N, followed by N − 1 integers - representing the numbers on the remaining cards (distinct integers in the range from 1 to N). Find and print the number on the lost card.
+
+
+```.py
+n = int(input())
+sum = 0
+for i in range(n - 1):
+    sum += int(input())
+print(int(n * (n + 1) / 2 - sum))
+```
+
+
+## Slices
+You are given a string.
+In the first line, print the third character of this string.
+
+In the second line, print the second to last character of this string.
+
+In the third line, print the first five characters of this string.
+
+In the fourth line, print all but the last two characters of this string.
+
+In the fifth line, print all the characters of this string with even indices (remember indexing starts at 0, so the characters are displayed starting with the first).
+
+In the sixth line, print all the characters of this string with odd indices (i.e. starting with the second character in the string).
+
+In the seventh line, print all the characters of the string in reverse order.
+
+In the eighth line, print every second character of the string in reverse order, starting from the last one.
+
+In the ninth line, print the length of the given string.
+
+
+```.py
+string = str(input())
+print(string[2])
+print(string[-2])
+print(string[:5])
+print(string[:-2])
+print(string[::2])
+print(string[1::2])
+print(string[::-1])
+print(string[::-2])
+print(len(string))
+```
+
+## The number of words
+Given a string consisting of words separated by spaces. Determine how many words it has. To solve the problem, use the method count.
+
+
+```.py
+words = input()
+print(words.count(' ') + 1)
+```
+
+
+## The two halves
+Given a string. Cut it into two "equal" parts (If the length of the string is odd, place the center character in the first string, so that the first string contains one more characther than the second). Now print a new string on a single row with the first and second halfs interchanged (second half first and the first half second)
+Don't use the statement if in this task.
+
+
+```.py
+s = input()
+print(s[(len(s) + 1) // 2:] + s[:(len(s) + 1) // 2])
+```
+
+
+## To swap the two words
+Given a string consisting of exactly two words separated by a space. Print a new string with the first and second word positions swapped (the second word is printed first).
+This task should not use loops and if.
+
+
+```.py
+s = input()
+print(s[s.find(' ') + 1:] + ' ' + s[:s.find(' ')])
+```
+
+
+## The first and last occurrence
+Given a string that may or may not contain a letter of interest. Print the index location of the first and last appearance of f. If the letter f occurs only once, then output its index. If the letter f does not occur, then do not print anything.
+Don't use loops in this task.
+
+
+```.py
+s = input()
+if s.count('f') == 1:
+    print(str(s.find('f')))
+elif s.count('f') > 1:
+    print(str(s.find('f')) + ' ' + str(s.rfind('f')))
+```
+
+
+## The second occurrence
+Given a string that may or may not contain the letter of interest. Print the index location of the second occurrence of the letter f. If the string contains the letter f only once, then print -1, and if the string does not contain the letter f, then print -2.
+
+
+```.py
+s = input()
+if s.count('f') == 1:
+    print(-1)
+elif s.count('f') == 0:
+    print(-2)
+else:
+    print(s.find('f', s.find('f') + 1))
+```
+
+
+## Remove the fragment
+Given a string in which the letter h occurs at least twice. Remove from that string the first and the last occurrence of the letter h, as well as all the characters between them.
+
+
+```.py
+s = input()
+if s.count('h') >= 2:
+    h = s.find('h')
+    print(s[:s.find('h')] + s[s.rfind('h') + 1:])
+```
+
+
+## Reverse the fragment
+Given a string in which the letter h occurs at least two times, reverse the sequence of characters enclosed between the first and last appearances.
+
+
+```.py
+s = input()
+i = s.find('h')
+j = s.rfind('h')
+print(s[:i] + s[i:j + 1][::-1] + s[j + 1:])
+```
+
+
+## Replace the substring
+Given a string. Replace in this string all the numbers 1 by the word one.
+
+
+```.py
+s = input()
+print(s.replace('1', 'one'))
+```
+
+
+## Delete a character
+Given a string. Remove from this string all the characters @.
+
+
+```.py
+s = input()
+print(s.replace('@', ''))
+```
+
+
+## Replace within the fragment
+Given a string. Replace every occurrence of the letter h by the letter H, except for the first and the last ones.
+
+
+```.py
+
+
+
+
  
  
