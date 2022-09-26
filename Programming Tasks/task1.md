@@ -125,8 +125,6 @@ What surprised me in the video:
 2. Seirra will be able to simulate situations and any questions the military has about their nuclear arsenal
 3. There is already another supercomputer being built, El Capitan, and it will succeed Seirra and do even more complex operations
 
-Citation: https://www.olcf.ornl.gov/frontier/
-
 
 ### Question 2: Supercomputers are currently used to investigate solutions to real life problems from cancer research, Ai, economics, or brain simulation. Military uses are also one major force behind the development of these machines. Analyze the benefits and possible drawbacks of developing supercomputers in our modern world? Should we do it?
 
@@ -137,4 +135,6 @@ Supercomputers provide many benefits, like the ability to analyze and simulate m
 
 Frontier is the most advanced computer in my country, United States. It is located at the Department of Energy’s Oak Ridge National Laboratory. It has optimized 3rd Gen AMD EPYC CPUs for HPC and AI, and AMD Instinct 250X accelerators. There are 74 cabinets, AMD Infinity Fabric CPU-GPU interconnect, multiple Slingshot NICs providing 100 GB/s network bandwidth (slingshot network which provides adaptive routing, congestion management and quality of service), 2-4x performance and capacity of Summit’s I/O subsystem (Fontier will have near node storage like Summit), and it has a peak performance of 1.6 EF.
 
+
+Citation: https://www.olcf.ornl.gov/frontier/
 
