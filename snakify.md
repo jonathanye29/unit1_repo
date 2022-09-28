@@ -1402,7 +1402,41 @@ print(count)
 ```
 
 
+## The sum of the sequence
+Determine the sum of all elements in the sequence, ending with the number 0.
 
+
+```.py
+x = int(input())
+sum = 0
+while x != 0:
+    sum += x
+    x = int(input())
+print(sum)
+```
+
+
+## The average of the sequence
+Determine the average of all elements of the sequence ending with the number 0.
+
+
+```.py
+x = int(input())
+sum = 0
+count = 0
+while x != 0:
+    sum += x
+    count += 1
+    x = int(input())
+print(sum / count)
+```
+
+
+## The maximum of the sequence
+A sequence consists of integer numbers and ends with the number 0. Determine the largest element of the sequence.
+
+
+```.py
 
  
  
