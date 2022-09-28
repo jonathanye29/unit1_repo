@@ -1437,6 +1437,40 @@ A sequence consists of integer numbers and ends with the number 0. Determine the
 
 
 ```.py
+x = int(input())
+max = x
+while x != 0:
+    x = int(input())
+    if x > max:
+        max = x
+print(max)
+```
+
+
+## The index of the maximum of a sequence
+A sequence consists of integer numbers and ends with the number 0. Determine the index of the largest element of the sequence. If the highest element is not unique, print the index of the first of them.
+
+
+```.py
+x = int(input())
+i = 0
+max = 0
+while x != 0:
+    i += 1
+    if x > max:
+        max = x
+        index = i
+    x = int(input())
+print(index)
+```
+
+
+## The number of even elements of the sequence
+Determine the number of even elements in the sequence ending with the number 0.
+
+
+```.py
+
 
  
  
