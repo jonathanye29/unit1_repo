@@ -45,9 +45,10 @@ Justify the tools/structure of your solution
 
 ## Flow Diagrams
 
+## Test Plan
 
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Create system diagram                                         | To have a clear idea of the hardware and software requirements for the proposed solution                        | 10min         | Sep 24                 | B         |
-
+| 1       | Create system diagram                                         | To have a clear idea of the hardware and software requirements for the proposed solution                        | 10min         | Sep 24                 | B         | 
+| 2       | Create a simple login system                                  | To create a program that allows the user to login into their digital ledger using a username and password they set up                        | 45 min         | Sep 26                 | B        |           
