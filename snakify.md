@@ -1516,6 +1516,59 @@ A sequence consists of integer numbers and ends with the number 0. Determine how
 
 
 ```.py
+x = []
+temp = 1
+while temp != 0:
+    temp = int(input())
+    x.append(temp)
+print(x.count(max(x)))
+```
 
+
+## Fibonacci numbers
+The Fibonacci sequence is defined as follows:
+ϕ0=0, ϕ1=1, ϕn=ϕn−1+ϕn−2.
+Given a non-negative integer n, print the nth Fibonacci number ϕn.
+This problem can also be solved with a for loop.
+
+
+```.py
+n = int(input())
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+print(fib(n))
+```
+
+
+## The index of a Fibonacci number
+The Fibonacci sequence is defined as follows:
+ϕ0=0, ϕ1=1, ϕn=ϕn−1+ϕn−2.
+Given an integer a, determine its index among the Fibonacci numbers, that is, print the number n such that ϕn=a. If a is not a Fibonacci number, print -1.
+
+
+```.py
+ n = int(input())
+a = 0
+b = 1
+c = 0
+count = 1
+while c < n:
+    c = a + b
+    a = b
+    b = c
+    count += 1
+if c == n:
+    print(count)
+else:
+    print(-1)
+```
+
+
+##
  
  
