@@ -1470,7 +1470,52 @@ Determine the number of even elements in the sequence ending with the number 0.
 
 
 ```.py
+x = int(input())
+count = 0
+while x != 0:
+    if x % 2 == 0:
+        count += 1
+    x = int(input())
+print(count)
+```
 
+
+## The number of elements that are greater than the previous one
+A sequence consists of integer numbers and ends with the number 0. Determine how many elements of this sequence are greater than their neighbours above.
+
+
+```.py
+x = int(input())
+count = 0
+while x != 0:
+    x1 = int(input())
+    if x1 > x:
+        count += 1
+    x = x1
+print(count)
+```
+
+
+## The second maximum
+The sequence consists of distinct positive integer numbers and ends with the number 0. Determine the value of the second largest element in this sequence. It is guaranteed that the sequence has at least two elements.
+
+
+```.py
+s = []
+temp = 1
+while temp != 0:
+    temp = int(input())
+    s.append(temp)
+s.sort()
+print(s[-2])
+```
+
+
+## The number of elements equal to the maximum
+A sequence consists of integer numbers and ends with the number 0. Determine how many elements of this sequence are equal to its largest element.
+
+
+```.py
 
  
  
