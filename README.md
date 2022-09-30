@@ -51,5 +51,7 @@ Justify the tools/structure of your solution
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1 | Meet withe the client | Talk with the client to dicuss the problems they are facing and brainstorm solutions to create a plan to help the client resolve the problems| 10 minutes | Sep 23 | A |
-| 2 | Create system diagram | To have a clear idea of the hardware and software requirements for the proposed solution                        | 10 minutes         | Sep 23| B | 
-| 3 | Create a simple login system | To create a program that allows the user to login into their digital ledger using a username and password they set up  | 45 minutes| Sep 26| B | 
+| 2 | Create system diagram | To have a clear idea of the hardware and software requirements for the proposed solution | 10 minutes | Sep 23| B | 
+| 3 | Create a simple registration and login system | To create a program that allows the user to register and login to their digital ledger using a username and password they set up | 1 hour minutes| Sep 26| C | 
+| 4 | Encrypt the password | A program to protect the application using a password with encryption | 45 minutes | Sep 28 | C |
+| 5 | Code the menu of the Crypto Wallet | To have a menu system that includes the title and menu items on the screen | 20 minutes | Sep 30 | C |
