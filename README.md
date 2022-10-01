@@ -55,3 +55,5 @@ Justify the tools/structure of your solution
 | 3 | Create a simple registration and login system | To create a program that allows the user to register and login to their digital ledger using a username and password they set up | 1 hour minutes| Sep 26| C | 
 | 4 | Encrypt the password | A program to protect the application using a password with encryption | 45 minutes | Sep 28 | C |
 | 5 | Code the menu of the Crypto Wallet | To have a menu system that includes the title and menu items on the screen | 20 minutes | Sep 30 | C |
+| 6 | Code menu options and allow user interaction | The user can choose different options from the menu (Ex: Option 1: Record transcation, and the user will be able to choose Option 1 to record a transaction). | 2 hours | Oct 1 | C | 
+| 7 | Create visual display of data | Code a bar graph that includes all expense history in categories. | 20 minutes | Oct 1 | C |
