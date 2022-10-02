@@ -43,7 +43,8 @@ Justify the tools/structure of your solution
 
 ## System Diagram
 
-![Fig 1. System diagram for the digital wallet, showing input/outputs and requirements, hardware/sopftware](project1_sysdiagram.jpg)
+![](project1_sysdiagram.jpg)
+Fig 1. System diagram for the digital wallet, showing input/outputs and requirements, hardware/sopftware
 
 ## Flow Diagrams
 
