@@ -1,9 +1,7 @@
-# Unit 1 Project Code:
+# Project 1: Crypto Wallet
 
 
 ```.py
-# Project 1: Crypto Wallet
-
 # Success Criteria:
 # The electronic ledger is a text-based software (Runs in the Terminal).
 # The electronic ledger display the basic description of the cyrptocurrency selected.
@@ -14,14 +12,14 @@
 # This is the clean and organized code for Unit 1 Project
 
 from project_lib import validate_int_input, colors, fonts
-
+import hmac
 
 colors = ["\033[0;30m", "\033[0;31m", "\033[0;32m", "\033[0;34m", "\033[0;35m",
           "\033[0;36m", "\033[0;37m", "\033[0;30m", "\033[0;31m", "\033[0;33m", "\033[0;34m"]
 fonts = ["\033[1m", "\033[2m", "\033[3m", "\033[4m", "\033[5m"]
 end_code = "\033[00m"
 
-import hmac
+
 
 
 def login(username:str, password:str) -> bool:
@@ -223,10 +221,11 @@ that allows for faster and simpler international payments and peer-to-peer trans
 the potential of decentralized finance by building an inclusive platform for economic empowerment that gives 
 everyone equal access to the global financial marketplace. 
 '''
-        print(f"{colors[6]}{info}{end_code}")
+        print(f"{colors[9]}{info}{end_code}")
 
 # Option 5: Exit
     if option == 5:
+        print(f"{colors[6]}Exiting...{end_code}")
         print(f"{colors[7]}{fonts[3]}See you soon!{end_code}".center(50, "="))
         exit()
 
@@ -247,8 +246,7 @@ everyone equal access to the global financial marketplace.
 2. Deposit or Withdraw Funds
 3. Create or View Transaction History
 4. View Basic Description of the Cryptocurrency
-5. View Useful Statistics
-6. Exit
+5. Exit
 """
             print(menu)
             Main()
@@ -258,4 +256,5 @@ everyone equal access to the global financial marketplace.
             exit()
 Main()
 ```
+
 
