@@ -49,9 +49,9 @@ Fig 1. System diagram for the digital wallet, showing input/outputs and requirem
 ## Flow Diagrams
 
 ## Test Plan
-
+| Test Type | Target | Procedure | Outcome |
 ## Record of Tasks
-| Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
+| Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1 | Meet withe the client | Talk with the client to dicuss the problems they are facing and brainstorm solutions to create a plan to help the client resolve the problems| 10 minutes | Sep 23 | A |
 | 2 | Create system diagram | To have a clear idea of the hardware and software requirements for the proposed solution | 10 minutes | Sep 23| B | 
