@@ -44,7 +44,7 @@ Justify the tools/structure of your solution
 ## System Diagram
 
 ![](u1project_sysdiagram.jpg)
-Fig 1. System diagram for the digital wallet, showing input/outputs and requirements, hardware/sopftware
+Fig 1. System diagram for the program. It shows the input/outputs and software/hardware requirements. The diagram shows how the program runs on Python and shows the different databases the code exchanges information.
 
 ## Flow Diagrams
 
