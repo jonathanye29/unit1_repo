@@ -48,6 +48,9 @@ Fig 1. System diagram for the digital wallet, showing input/outputs and requirem
 
 ## Flow Diagrams
 
+![](u1projectflowdiagram1.jpg)
+Fig 2. The flow diagram is for calculating the total balance the user has in their account according to their deposit and withdrawal history.
+
 ## Test Plan
 | Test Type | Target | Procedure | Expected Outcome |
 |-----------|--------|-----------|------------------|
@@ -58,7 +61,7 @@ Fig 1. System diagram for the digital wallet, showing input/outputs and requirem
 | 1 | Meet withe the client | Talk with the client to dicuss the problems they are facing and brainstorm solutions to create a plan to help the client resolve the problems| 10 minutes | Sep 23 | A |
 | 2 | Brainstorm and write the problem definition	| A clear problem definition on Github	| 15 minutes | Sep 23 | A |
 | 3 | Brainstorm and write down success criterias | A clear success criteria that suits the client and resolves the problem | 15 minutes | Sep 23 | A |
-| 4 | Brainstorm and write down a proposed solution for the client | A clear justification that suits the client and developer
+| 4 | Brainstorm and write down a proposed solution for the client| A clear justification that suits the client and developer.| 15 minutes | Sep 23 | A |
 | 5 | Create system diagram | To have a clear idea of the hardware and software requirements for the proposed solution | 10 minutes | Sep 23| B | 
 | 6 | Create a simple registration and login system | To create a program that allows the user to register and login to their digital ledger using a username and password they set up | 1 hour minutes| Sep 26| C | 
 | 7 | Encrypt the password | A program to protect the application using a password with encryption | 45 minutes | Sep 28 | C |
@@ -72,3 +75,5 @@ Fig 1. System diagram for the digital wallet, showing input/outputs and requirem
 | 15 | Code transaction functions | Create a code that allows the user to record when they made the transaction, what kind of transaction it was, and how much the transaction was. The code will then transfer all of that information into a spreadsheet and bar graph, with accurate data | 1 hour | Oct 4 | C |
 | 16 | Make sure to validate user input for all option choices | Code functions that would make sure what the user inputs follows the requirements (Ex: If a number digit is required but user enters a character, an error message will print, and allowing them to retry). | 1 hour 30 minutes | Oct 5 | C | 
 | 17 | Hide the password when it is being typed | The user will only see asteriks when entering their password to increase security. | 45 minutes | Oct 5 | C |
+| 18 | Draw and describe the flow diagrams | Flow diagrams for different parts of the solution along with a brief explanation | 45 minutes | Oct 5 | B |
+
