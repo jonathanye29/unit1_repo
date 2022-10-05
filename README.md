@@ -51,7 +51,10 @@ Fig 1. System diagram for the digital wallet, showing input/outputs and requirem
 ## Test Plan
 | Test Type | Target | Procedure | Expected Outcome |
 |-----------|--------|-----------|------------------|
-| Unit testing | validate_int_input | 1. Use the function validate_int_input 2. Enter a letter in the terminal 3. Enter a number in the terminal | 1. With a letter an error message will be print. 2. With a number the program will exit. |
+| Unit testing | validate_int_input | 1. Use the function validate_int_input 
+2. Enter a letter in the terminal 
+3. Enter a number in the terminal | 1. With a letter an error message will be print. 
+2. With a number the program will exit. |
 ## Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|----------------|-----------------|---------------|------------------------|-----------|
