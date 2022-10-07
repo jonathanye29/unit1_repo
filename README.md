@@ -255,6 +255,9 @@ for label, count in data:
 Since my client had trouble keeping track of all of their past transactions, I thought a bar graph would be a nice addition to the spreadsheet. The code above prints out the users recorded transactions into an organized bar graph that displays the total spendings. The bar graph code follows the code from the spreadsheet, taking the same data from the file "sheet.csv". It finds the category of expense using "if" and "elif" statements. It groups up all of the numbers into the given categories, and then adds them up accordingly. The bar graph is produced using the number data gathered with a for loop. It prints out each category in a different row, and the displays the bar based off of the total prices added up. The larger the total, the longer the bar will be and vice versa. The bar graph is visually appealing and it will allow my client to see how much money she has used on certain things and compare her spendings. The bar graph is a good way help my client keep her transacitions organized.
 
 
+## Video of the Program
+[Video of the Program](https://drive.google.com/file/d/1ZUzw6oEtKnRyDeC0dIOOwuSIvULnd2qX/view?usp=sharing)
+
 # Citations
 1. Maker (MKR) Price, Charts, and News - Coinbase. www.coinbase.com/price/maker. Retrieved September 23
 2. Abra. “Maker.” Abra, 12 Apr. 2022, www.abra.com/cryptocurrency/maker/#:~:text=What%20is%20Maker%20coin%3F,peer%2Dto%2Dpeer%20transactions. September 23
