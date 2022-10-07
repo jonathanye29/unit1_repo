@@ -92,7 +92,8 @@ Fig 4. The flow diagram is for displaying the bar graph with all the transaction
 | 17 | Hide the password when it is being typed | The user will only see asteriks when entering their password to increase security. | 45 minutes | Oct 5 | C |
 | 18 | Draw and describe the flow diagrams | Flow diagrams for different parts of the solution along with a brief explanation | 1 hour | Oct 6 | B |
 | 19 | Write the test plans | Procedures one should take to test the program and the expected outcome of each test is on Github | 1 hour | Oct 7 | B |
-
+| 20 | Meet with client | Hear feedback from the client about the current state of the product | 30 minutes | Oct 7 | B | 
+| 21 | Finish Criteria C | Write the descriptions of the code and the detail of the techniques that were used on Github | 2 hours | Oct 7 | C |
 
 # Criteria C: Development
 
@@ -161,4 +162,82 @@ def login(username:str, password:str) -> bool:
 
 
 The code above is the program used to allow the client to login to their Crypto Wallet with their registered credentials. The code opens the file where the credntials are stored, and compares whether the entered crendentials match with the registered credentials. If the username and passwords match, it will grant the user access to their Crypto Wallet, and if they don't, they will not gain access to the Crypto Wallet.
+
+## Welcome and main menu
+
+```.py
+welcome_msg = "Crypto Wallet".center(50, "=")
+prompt_msg = "Please enter an option [1-5]: "
+
+print(f"{colors[7]}{fonts[3]}{welcome_msg}{end_code}")
+print("Options".center(50))
+
+menu = """1. View Wallet Balance
+2. Deposit or Withdraw Funds
+3. Create or view transaction history
+4. View Basic Description of the Cryptocurrency
+5. Exit
+"""
+print(menu)
+
+option = validate_int_input(prompt_msg)
+    while option > 5 or option < 1:
+        option = validate_int_input(f"{colors[1]}Invalid option.{prompt_msg}{end_code}")
+```
+
+
+After the user logs into their crypto wallet, they will be greeted with a welcome message. After that, I created the main menu where the user can access all compotents of their crypto wallet. There are 5 options and I give the user the ability to choose which menu option by letting them input a number between 1-5. In this menu function, if the user does not input a number in the range of 1-5 or they type any other characters, the code will let them try again by letting them know that their input was invalid.
+
+## Option 1
+
+```.py
+    if option == 1:
+        with open("balance.csv", "r") as file:
+            balance = file.readlines()
+        with open("withdraw.csv", "r") as file:
+            withdraw = file.readlines()
+        balance[0] = balance[0].strip()
+        taken = 0
+        wallet = 0
+        for i in balance:
+            wallet += int(i)
+            converted = int(wallet) * float(144.75)
+        for x in withdraw:
+            taken += int(x)
+            converted = int(wallet) * float(144.75)
+        total = wallet - taken
+        if total < 0:
+            print(f"{colors[1]}{fonts[0]}You have a negative balance of {total}MKR.{end_code}")
+        else:
+            print(f"{colors[7]}You have a current balance of {colors[2]}{total}MKR{end_code}, which is worth {colors[2]}${converted} USD{end_code {end_code}")
+```
+
+
+This is the code for the first menu option. If the user selects option 1 from the main menu, this is the code that will run. Option 1 shows the user their current wallet balance. It opens both database files "balance.csv" and "withdraw.csv" as files and reads them. What this does is read all of the data inside of the files. To display the correct wallet balance, I coded the program to subtract the original wallet balance by the amount of money withdrawn. Not only does this code display the regular cryptocurrency balance, it also displays the converted value of the amount of cryptocurrency they have. Further, the program will tell the user if they have a negative balance.
+
+
+## Option 2
+
+```.py
+    if option == 2:
+        transmenu = """1. Deposit
+2. Withdraw"""
+        print(transmenu)
+        transmenu = validate_int_input('Please enter an option [1-2]: ')
+        while transmenu > 2 or transmenu < 1:
+            transmenu = validate_int_input(f"{colors[1]}Invalid option. Please enter an option [1-2]: {end_code}")
+
+        if transmenu == 1:
+            with open("balance.csv", "a") as file:
+                deposit = validate_int_input("How much MKR would you like to deposit?: (ex. 10): ")
+                file.write(f'{deposit}\n')
+                print(f"{colors[2]}{fonts[0]}You have deposited {deposit}MKR into your wallet.{end_code}")
+
+        if transmenu == 2:
+            with open("withdraw.csv", "a") as file:
+                withdraw = validate_int_input("How much MKR would you like to withdraw?: (ex. 10): ")
+                file.write(f'{withdraw}\n')
+                print(f"{colors[2]}{fonts[0]}You have withdrawn {withdraw}MKR from your wallet.{end_code}")
+```
+
 
