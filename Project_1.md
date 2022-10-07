@@ -1,19 +1,19 @@
 # Project 1: Crypto Wallet
 
-
 ```.py
 # Success Criteria:
 # The electronic ledger is a text-based software (Runs in the Terminal).
-# The electronic ledger display the basic description of the cyrptocurrency selected.
+# The electronic ledger display the basic description of the cryptocurrency selected.
 # The electronic ledger allows to enter, withdraw and record transactions.
-# The electronic ledger can only be accessed by the client through a set password.
+# The electronic ledger can only be accessed by the client through a set and encrypted password.
 # The electronic ledger will display all past transactions.
-# The electronic ledger will show data about her expenses using a bar graph: Each color represents a certain expense.
+# The electronic ledger will show data about her expenses using a bar graph
 # This is the clean and organized code for Unit 1 Project
 
+# Imports and colors
 from project_lib import validate_int_input, colors, fonts
 import hmac
-
+import maskpass
 colors = ["\033[0;30m", "\033[0;31m", "\033[0;32m", "\033[0;34m", "\033[0;35m",
           "\033[0;36m", "\033[0;37m", "\033[0;30m", "\033[0;31m", "\033[0;33m", "\033[0;34m"]
 fonts = ["\033[1m", "\033[2m", "\033[3m", "\033[4m", "\033[5m"]
@@ -26,7 +26,7 @@ def login(username:str, password:str) -> bool:
     """This function receives a username and a password and returns 'ACCESS GRANTED'
     if the username is in the database and the password is correct, otherwise returns 'ACCESS DENIED'"""
 
-    with open("db.csv", "r") as file:
+    with open("credentials.csv", "r") as file:
         database = file.readlines()
     salty = "¯\(°_O)/¯"
     to_hash = username + password + salty
@@ -47,7 +47,7 @@ def login(username:str, password:str) -> bool:
     return output
 
 user = input('Please enter your username: ')
-password = input('Please enter your password: ')
+password = maskpass.askpass('Please enter your password: ')
 test = login(password=password,username=user)
 print(test)
 
@@ -62,11 +62,12 @@ print("Options".center(50))
 
 menu = """1. View Wallet Balance
 2. Deposit or Withdraw Funds
-3. Create and view transaction history
+3. Create or view transaction history
 4. View Basic Description of the Cryptocurrency
 5. Exit
 """
 print(menu)
+
 def Main():
     option = validate_int_input(prompt_msg)
     while option > 5 or option < 1:
@@ -78,18 +79,18 @@ def Main():
 2. Withdraw"""
         print(transmenu)
         transmenu = validate_int_input('Please enter an option [1-2]: ')
-        while transmenu > 2 or option < 1:
+        while transmenu > 2 or transmenu < 1:
             transmenu = validate_int_input(f"{colors[1]}Invalid option. Please enter an option [1-2]: {end_code}")
 
         if transmenu == 1:
             with open("balance.csv", "a") as file:
-                deposit = input("How much MKR would you like to deposit?: (ex. 10): ")
+                deposit = validate_int_input("How much MKR would you like to deposit?: (ex. 10): ")
                 file.write(f'{deposit}\n')
                 print(f"{colors[2]}{fonts[0]}You have deposited {deposit}MKR into your wallet.{end_code}")
 
         if transmenu == 2:
             with open("withdraw.csv", "a") as file:
-                withdraw = input("How much MKR would you like to withdraw?: (ex. 10): ")
+                withdraw = validate_int_input("How much MKR would you like to withdraw?: (ex. 10): ")
                 file.write(f'{withdraw}\n')
                 print(f"{colors[2]}{fonts[0]}You have withdrawn {withdraw}MKR from your wallet.{end_code}")
 
@@ -109,7 +110,11 @@ def Main():
             taken += int(x)
             converted = int(wallet) * float(144.75)
         total = wallet - taken
-        print(f"{colors[7]}You have a current balance of {colors[2]}{total}MKR{end_code}, which is worth {colors[2]}${converted} USD{end_code}{end_code}")
+        if total < 0:
+            print(f"{colors[1]}{fonts[0]}You have a negative balance of {total}MKR.{end_code}")
+        else:
+            print(f"{colors[7]}You have a current balance of {colors[2]}{total}MKR{end_code}, which is worth {colors[2]}${converted} USD{end_code}{end_code}")
+
 
 # Option 3: Create or View Transaction History
     if option == 3:
@@ -118,7 +123,7 @@ def Main():
         print(cvmenu)
 
         cvmenu = validate_int_input('Please enter an option [1-2]: ')
-        while cvmenu > 2 or option < 1:
+        while cvmenu > 2 or cvmenu < 1:
             cvmenu = validate_int_input(f"{colors[1]}Invalid option. Please enter an option [1-2]: {end_code}")
 
 # cvmenu option 1: Create a transaction
@@ -131,14 +136,29 @@ def Main():
 5. Other'''
             print(expensemenu)
             expensemenu = validate_int_input('Please enter an option [1-5]: ')
+            while expensemenu > 5 or expensemenu < 1:
+                expensemenu = validate_int_input(f"{colors[1]}Invalid option. Please enter an option [1-5]: {end_code}")
             cats = ["Food", "Daily", "Rent", "Travel", "Other"]
             if expensemenu in [1,2,3,4,5]:
                 with open("sheet.csv", "a") as file:
-                    day = input('Please type when you made this transaction: MM/DD/YYYY: ')
-                    cost = input('Please type the cost of this transaction: ex. 10: ')
-                    transaction = f"{day},{cats[expensemenu-1]},{cost}"
+                    MM = validate_int_input("Please enter the month of your transaction (ex. 01 - 12): ")
+                    while not 0 < MM < 13:
+                        print(f"{colors[1]}Invalid month.{end_code}")
+                        MM = validate_int_input(f'Please enter the month you made this transaction (ex. 01 - 12): ')
+                    DD = validate_int_input("Please enter the day of your transaction (ex. 01 - 31): ")
+                    while not 0 < DD < 32:
+                        print(f"{colors[1]}Invalid day.{end_code}")
+                        DD = validate_int_input(f'Please enter the day you made this transaction (ex. 01 - 31): ')
+                    YYYY = validate_int_input("Please enter the year of your transaction (ex. 2021): ")
+                    while not 2000 < YYYY < 2023:
+                        print(f"{colors[1]}Invalid year.{end_code}")
+                        YYYY = validate_int_input(f'Please enter the year you made this transaction (ex. 2021): ')
+                    date = f'{MM}/{DD}/{YYYY}'
+                    cost = validate_int_input('Please type the cost of this transaction: ex. 10: ')
+                    transaction = f"{date},{cats[expensemenu-1]},{cost}"
                     file.write(f'{transaction}\n')
-                    print(f"{colors[2]}{fonts[0]}You have created a transaction for {cost}MKR for {cats[expensemenu - 1]} on {day}.{end_code}")
+                print(f"{colors[2]}{fonts[0]}You have created a transaction for {cost}MKR for {cats[expensemenu - 1]} on {date}.{end_code}")
+
 
 # cvmenu option 2: View transaction history
         if cvmenu == 2:
@@ -252,9 +272,9 @@ everyone equal access to the global financial marketplace.
             Main()
         else:
             thankyoumsg = "See you soon!".center(50, "=")
+            print(f"{colors[6]}Exiting...{end_code}")
             print(f"{colors[7]}{fonts[3]}{thankyoumsg}{end_code}")
             exit()
 Main()
 ```
-
 
