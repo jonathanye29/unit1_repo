@@ -55,6 +55,11 @@ Fig 2. The flow diagram is for calculating the total balance the user has in the
 ![](u1projectflowdiagram2.jpg)
 Fig 3. The flow diagram is for calculating up all past transactions and printing them out onto an organized spreadsheet.
 
+
+![](u1projectflowdiagram3.jpg)
+Fig 4. The flow diagram is for displaying the bar graph with all the transaction totals. It calculates the total amount of money spend in each expense and displays them in an organized categorized bar graph.
+
+
 ## Test Plan
 | Test Type | Target | Procedure | Expected Outcome |
 |-----------|--------|-----------|------------------|
