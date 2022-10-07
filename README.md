@@ -98,6 +98,27 @@ Fig 4. The flow diagram is for displaying the bar graph with all the transaction
 4. If statements
 5. Encryption
 
+## Registration
+
+```.py
+def register(uname:str, password:str):
+    '''
+    This function saves a user, password in the file
+    credentials.csv
+    :param uname: username a string
+    :param password: password a string
+    :return: nothing
+    '''
+    #open the file in mode append: a
+    file = open("credentials.csv", "a")
+    salty = "¯\(°_O)/¯"
+    to_hash = uname + password + salty
+    hashed_password = hmac.new(''.encode(), to_hash.encode(), 'sha512').hexdigest()
+    file.write(f"{uname},{hashed_password}\n")
+```
+
+The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, and it adds their crendentials into a file with and encrypted password. The encryption I used in this is called "hashing". Encryption is the process of encoding plain text or any information in such a way that only authorized people can read it with a corresponding key, like a password, so that confidential data can be protected from unauthorized persons. Hashing converts any amount of data into a fixed-length hash that cannot be reversed. In my code, it is hashed using a random string of characters, known as a salt. This is an additional input to my code above to hash the user's password.
+
 
 ## Create or view transaction history
 
