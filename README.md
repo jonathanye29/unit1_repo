@@ -62,7 +62,10 @@ Fig 4. The flow diagram is for displaying the bar graph with all the transaction
 ## Test Plan
 | Test Type | Target | Procedure | Expected Outcome |
 |-----------|--------|-----------|------------------|
-| Unit testing | validate_int_input | 1. Use the function validate_int_input 2. Enter a letter in the terminal 3. Enter a number in the terminal | 1. With a letter an error message will be print 2. With a number the program will exit. |
+| Functional: Unit testing | validate_int_input | 1. Use the function validate_int_input 2. Enter a letter in the terminal 3. Enter a number in the terminal | 1. With a letter an error message will be print 2. With a number the program will exit. |
+| Functional: Integrational testing | Register system | 1. Use the function register. 2. Enter a desired username and password in the terminal | After entering a desired username and password, the crendtials should go into a database file to store the credentials. It should also print "Registeration Successful!" after the username and password is entered.
+| Functional: Integrational testing | Login system | 1. Use the function login. 2. Enter your credentials (username and password) in the terminal | If the username and passwords match with the credentials stored in the database file from the registrations, the code should continue by printing, "Welcome to your Crypto Wallet (username)!". If the username and password entered does not match any of the crendentials stored in the database file, access will be denied to the user and the program will close. 
+| 
 ## Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time estimate | Target completion date | Criterion |
 |---------|----------------|-----------------|---------------|------------------------|-----------|
@@ -84,6 +87,7 @@ Fig 4. The flow diagram is for displaying the bar graph with all the transaction
 | 16 | Make sure to validate user input for all option choices | Code functions that would make sure what the user inputs follows the requirements (Ex: If a number digit is required but user enters a character, an error message will print, and allowing them to retry). | 1 hour 30 minutes | Oct 5 | C | 
 | 17 | Hide the password when it is being typed | The user will only see asteriks when entering their password to increase security. | 45 minutes | Oct 5 | C |
 | 18 | Draw and describe the flow diagrams | Flow diagrams for different parts of the solution along with a brief explanation | 1 hour | Oct 6 | B |
+| 19 | Write the test plans | Procedures one should take to test the program and the expected outcome of each test is on Github | 1 hour | Oct 7 | B |
 
 
 # Criteria C: Development
