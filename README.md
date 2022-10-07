@@ -112,7 +112,7 @@ if option == 3:
         cvmenu = validate_int_input(f"{colors[1]}Invalid option. Please enter an option [1-2]: {end_code}")
 ```
 
-Above is the code that allows the user to choose between creating a new transaction or viewing their transaction history. Using the "if" statement, the user will be directed to either creating a new transaction, or to their transaction history. To prevent user error, the code above will validate that the user inputs a digit within the range 1-2 and not something else. If the user does end up inputing something other than 1 or 2, an error message will appear and the user will be given another chance to input a correct option.
+Above is the code that allows the user to choose between creating a new transaction or viewing their transaction history. Using the "if" statement, the user will be directed to either creating a new transaction, or to their transaction history. This is one of the main solutions to the clients problem, and it will allow her to easily store and see her transaction data.
 
 
 ## Create transaction
@@ -151,7 +151,7 @@ if expensemenu in [1,2,3,4,5]:
     print(f"{colors[2]}{fonts[0]}You have created a transaction for {cost}MKR for {cats[expensemenu - 1]} on {date}.{end_code}")
 ```
 
-This is the code that allows the user to create a transaction. It first verifies an option the user inputs, 1-5, which defines each expense category. Then based off of the option, the transaction will be created under that category. The code opens "sheet.csv" as a file, and adds the data inputed by the user. The code asks for the expense type, date, and cost. To prevent user error, the date is verified by section. First month, then day, then year. If they type anything other than what the instructions prompt, and error message will print and they will be given the chance the try again. After all the data is gathered, it is neatly compiled and added into the database file "sheet.csv".
+This is the code that allows the user to create a transaction. It first verifies an option the user inputs, 1-5, which defines each expense category. Then based off of the option, the transaction will be created under that category. The code asks for the expense type, date, and cost. To prevent user error, the data is verified by section. After all the data is gathered, it is neatly compiled and added into the database file "sheet.csv". I tried to make this as simple as possible by keeping it short. The client will only need to enter three different pieces of information. By validating each of the users input, it makes the information much easier to orangize. Instead of having to take out each number or word out from the inputs, it is easily organized and put into categories.
 
 
 ## Transaction history spreadsheet
@@ -182,7 +182,7 @@ for l in sheet:
     print('-' * 60)
 ```
 
-The code above prints out the users recorded transactions into an organized spreadsheet. It is able to print all recent transactions created by the user by using a for loop. With the for loop, it will continue to go through the data in the "sheet.csv" file and print the data into an organized spreadsheet with all the data in the appropiate column until there is no more data to print. 
+The code above prints out the users recorded transactions into an organized spreadsheet. This will allow the client to easliy see all of their past transaction data. It is simple and visually appealing. It is able to print all recent transactions created by the user by using a for loop. With the for loop, it will continue to go through the data in the "sheet.csv" file and print the data into an organized spreadsheet with all the data in the appropiate column until there is no more data to print. It makes sure each piece of information is placed in the correct column to prevent disorganization.
 
 
 ## Transaction history bar graph 
@@ -231,7 +231,7 @@ for label, count in data:
     print(f'{colors[7]}{label.rjust(longest_label_length)} ▏ {count:#4d} {bar}{end_code}')
 ```
 
-The code above prints out the users recorded transactions into an organized bar graph. The bar graph code follows the code from the spreadsheet, taking the same data from the file "sheet.csv". It finds the category of expense using "if" and "elif" statements. It groups up all of the numbers into the given categories, and then adds them up accordingly. The bar graph is produced using the number data gathered with a for loop. It prints out each category in a different row, and the displays the bar based off of the total prices added up. The larger the total, the longer the bar will be and vice versa. 
+Since my client had trouble keeping track of all of their past transactions, I thought a bar graph would be a nice addition to the spreadsheet. The code above prints out the users recorded transactions into an organized bar graph that displays the total spendings. The bar graph code follows the code from the spreadsheet, taking the same data from the file "sheet.csv". It finds the category of expense using "if" and "elif" statements. It groups up all of the numbers into the given categories, and then adds them up accordingly. The bar graph is produced using the number data gathered with a for loop. It prints out each category in a different row, and the displays the bar based off of the total prices added up. The larger the total, the longer the bar will be and vice versa. The bar graph is visually appealing and it will allow my client to see how much money she has used on certain things and compare her spendings. The bar graph is a good way help my client keep her transacitions organized.
 
 
 # Citations
