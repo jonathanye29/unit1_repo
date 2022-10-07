@@ -1,7 +1,7 @@
 # Unit-1 Project: Crypto Wallet
 
-![](22ROOSE-master768.gif)  
-<sub>Illustration for Glenn Harvey</sub>
+![](cryptowalletpic.gif)  
+<sub>Illuistration NDAX: Coin scene by Damian Denis</sub>
 
 # Criteria A: Planning
 
