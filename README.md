@@ -25,12 +25,6 @@ I will to design and make a digital ledger for a client who is struggling to kee
 
 Maker (MKR) is a smart contract platform built on the Ethereum blockchain that aims to solve volatility issues for the crypto market. It is the basis for a new-generation blockchain-based banking system that allows for faster and simpler international payments and peer-to-peer transactions. Maker aims to unlock the potential of decentralized finance by building an inclusive platform for economic empowerment that gives everyone equal access to the global financial marketplace.
 
-Citations: 
-https://www.coinbase.com/price/maker
-https://www.abra.com/cryptocurrency/maker/#:~:text=What%20is%20Maker%20coin%3F,peer%2Dto%2Dpeer%20transactions.
-
-Justify the tools/structure of your solution
-
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
 2. The electronic ledger display the basic description of the cyrptocurrency selected.
@@ -381,5 +375,7 @@ This code runs after the user finishes completing the desired action. For exampl
 
 
 # Citations
-1. “How to Hash Passwords in Python.” GeeksforGeeks, 22 June 2022, www.geeksforgeeks.org/how-to-hash-passwords-in-python/. Retrieved September 28
-2. “Drawing Ascii Bar Charts.” Drawing ASCII Bar Charts –, alexwlchan.net/2018/05/ascii-bar-charts/. Retrieved October 1
+1. Maker (MKR) Price, Charts, and News - Coinbase. www.coinbase.com/price/maker. Retrieved September 23
+2. Abra. “Maker.” Abra, 12 Apr. 2022, www.abra.com/cryptocurrency/maker/#:~:text=What%20is%20Maker%20coin%3F,peer%2Dto%2Dpeer%20transactions. September 23
+3. “How to Hash Passwords in Python.” GeeksforGeeks, 22 June 2022, www.geeksforgeeks.org/how-to-hash-passwords-in-python/. Retrieved September 28
+4. “Drawing Ascii Bar Charts.” Drawing ASCII Bar Charts –, alexwlchan.net/2018/05/ascii-bar-charts/. Retrieved October 1
