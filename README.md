@@ -98,7 +98,7 @@ Fig 4. The flow diagram is for displaying the bar graph with all the transaction
 4. If statements
 5. Encryption
 
-## Registration
+## User registration
 
 ```.py
 def register(uname:str, password:str):
