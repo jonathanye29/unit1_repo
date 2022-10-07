@@ -381,5 +381,5 @@ This code runs after the user finishes completing the desired action. For exampl
 
 
 # Citations
-1. “How to Hash Passwords in Python.” GeeksforGeeks, 22 June 2022, https://www.geeksforgeeks.org/how-to-hash-passwords-in-python/. 
-2. “Drawing Ascii Bar Charts.” Drawing ASCII Bar Charts –, alexwlchan.net/2018/05/ascii-bar-charts/. 
+1. “How to Hash Passwords in Python.” GeeksforGeeks, 22 June 2022, www.geeksforgeeks.org/how-to-hash-passwords-in-python/. Retrieved September 28
+2. “Drawing Ascii Bar Charts.” Drawing ASCII Bar Charts –, alexwlchan.net/2018/05/ascii-bar-charts/. Retrieved October 1
