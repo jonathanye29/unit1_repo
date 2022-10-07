@@ -1,6 +1,6 @@
 # Unit-1 Project: Crypto Wallet
 
-![](cryptowalletpic.gif)  
+![]()
 <sub>Illuistration NDAX: Coin scene by Damian Denis</sub>
 
 # Criteria A: Planning
