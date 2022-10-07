@@ -105,7 +105,7 @@ Fig 4. The flow diagram is for displaying the bar graph with all the transaction
 5. Encryption
 
 
-## User Registration
+## User registration
 
 ```.py
 import hmac
@@ -128,11 +128,10 @@ def register(uname:str, password:str):
     file.write(f"{uname},{hashed_password}\n")
 ```
 
+The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, and it adds their crendentials into a file with and encrypted password. The encryption I used in this is called "hashing". Encryption is the process of encoding plain text or any information in such a way that only authorized people can read it with a corresponding key, like a password, so that confidential data can be protected from unauthorized persons. Hashing converts any amount of data into a fixed-length hash that cannot be reversed. In my code, it is hashed using a random string of characters, known as a salt. This is an additional input to my code above to hash the user's password.
 
-The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, and it adds their crendentials into a file with and encrypted password.
 
-
-## User Login
+## User login
 
 ```.py
 def login(username:str, password:str) -> bool:
@@ -160,8 +159,8 @@ def login(username:str, password:str) -> bool:
     return output
 ```
 
-
 The code above is the program used to allow the client to login to their Crypto Wallet with their registered credentials. The code opens the file where the credntials are stored, and compares whether the entered crendentials match with the registered credentials. If the username and passwords match, it will grant the user access to their Crypto Wallet, and if they don't, they will not gain access to the Crypto Wallet.
+
 
 ## Welcome and main menu
 
@@ -185,10 +184,10 @@ option = validate_int_input(prompt_msg)
         option = validate_int_input(f"{colors[1]}Invalid option.{prompt_msg}{end_code}")
 ```
 
-
 After the user logs into their crypto wallet, they will be greeted with a welcome message. After that, I created the main menu where the user can access all compotents of their crypto wallet. There are 5 options and I give the user the ability to choose which menu option by letting them input a number between 1-5. In this menu function, if the user does not input a number in the range of 1-5 or they type any other characters, the code will let them try again by letting them know that their input was invalid.
 
-## Option 1
+
+## Current wallet balance
 
 ```.py
     if option == 1:
@@ -212,11 +211,10 @@ After the user logs into their crypto wallet, they will be greeted with a welcom
             print(f"{colors[7]}You have a current balance of {colors[2]}{total}MKR{end_code}, which is worth {colors[2]}${converted} USD{end_code {end_code}")
 ```
 
+This is the code for the first menu option. If the user selects option 1 from the main menu, this is the code that will run. It opens both database files "balance.csv" and "withdraw.csv" as files and reads them. What this does is read all of the data inside of the files. To display the correct wallet balance, I coded the program to subtract the original wallet balance by the amount of money withdrawn. Not only does this code display the regular cryptocurrency balance, it also displays the converted value of the amount of cryptocurrency they have. Further, the program will tell the user if they have a negative balance.
 
-This is the code for the first menu option. If the user selects option 1 from the main menu, this is the code that will run. Option 1 shows the user their current wallet balance. It opens both database files "balance.csv" and "withdraw.csv" as files and reads them. What this does is read all of the data inside of the files. To display the correct wallet balance, I coded the program to subtract the original wallet balance by the amount of money withdrawn. Not only does this code display the regular cryptocurrency balance, it also displays the converted value of the amount of cryptocurrency they have. Further, the program will tell the user if they have a negative balance.
 
-
-## Option 2
+## Deposit or withdraw
 
 ```.py
     if option == 2:
@@ -240,4 +238,148 @@ This is the code for the first menu option. If the user selects option 1 from th
                 print(f"{colors[2]}{fonts[0]}You have withdrawn {withdraw}MKR from your wallet.{end_code}")
 ```
 
+Above is the code that allows the user to choose between deposting or withdrawing funds. The data will be stored in the "balance.csv" and "withdraw.csv" files. The code allows the user to deposit or withdraw funds using an "if" statement. The "if" statement checks which option the user inputs. If they input "1", they are choosing option 1, which lets them deposit money. If they input "2", they are choosing option 2, which lets them withdraw money.
 
+
+## Transaction history spreadsheet
+
+```.py
+with open("sheet.csv", "r") as file:
+    sheet = file.readlines()
+    print('Transaction history:')
+    print('-' * 60)
+    print('|  Date(MM/DD/YYYY)  |  Expense  | Transaction amount (MKR)|')
+    print('-' * 60)
+
+
+
+
+food = 0
+daily = 0
+rent = 0
+travel = 0
+other = 0
+for l in sheet:
+    l = l.strip()
+    line1 = l.split(",")
+    date = line1[0]
+    cat = line1[1]
+    price = line1[2]
+    print(f'|{date.center(20, " ")}|{cat.center(11, " ")}|{price.center(25, " ")}|')
+    print('-' * 60)
+```
+
+The code above prints out the users recorded transactions into an organized spreadsheet. It is able to print all recent transactions created by the user by using a for loop. With the for loop, it will continue to go through the data in the "sheet.csv" file and print the data into an organized spreadsheet with all the data in the appropiate column until there is no more data to print. 
+
+## Transaction history bar graph 
+
+```.py
+# Adding up the prices
+if cat.lower() in "food":
+    food += int(price)
+
+elif cat.lower() in "daily":
+    daily += int(price)
+
+elif cat.lower() in "rent":
+    rent += int(price)
+
+elif cat.lower() in "travel":
+    travel += int(price)
+
+else:
+    other += int(price)
+
+# Bar graph of expenses
+data = [
+    ('Food', food),
+    ('Daily', daily),
+    ('Rent', rent),
+    ('Travel', travel),
+    ('Other', other),
+]
+
+max_value = max(count for _, count in data)
+increment = max_value / 25
+
+longest_label_length = max(len(label) for label, _ in data)
+
+for label, count in data:
+
+    bar_chunks, remainder = divmod(int(count * 8 / increment), 8)
+    bar = '█' * bar_chunks
+
+    if remainder > 0:
+        bar += chr(ord('█') + (8 - remainder))
+
+    bar = bar or '▏'
+
+    print(f'{colors[7]}{label.rjust(longest_label_length)} ▏ {count:#4d} {bar}{end_code}')
+```
+
+The code above prints out the users recorded transactions into an organized bar graph. The bar graph code follows the code from the spreadsheet, taking the same data from the file "sheet.csv". It finds the category of expense using "if" and "elif" statements. It groups up all of the numbers into the given categories, and then adds them up accordingly. The bar graph is produced using the number data gathered with a for loop. It prints out each category in a different row, and the displays the bar based off of the total prices added up. The larger the total, the longer the bar will be and vice versa. 
+
+
+## Printing information about the cryptocurrency
+
+```.py
+    if option == 4:
+        print(f"{colors[7]}4. Information about your cryptocurrency Maker (MKR):{end_code}")
+        info = '''Maker (MKR) is a smart contract platform built on the Ethereum blockchain that aims to solve 
+volatility issues for the crypto market. It is the basis for a new-generation blockchain-based banking system 
+that allows for faster and simpler international payments and peer-to-peer transactions. Maker aims to unlock 
+the potential of decentralized finance by building an inclusive platform for economic empowerment that gives 
+everyone equal access to the global financial marketplace. 
+'''
+        print(f"{colors[9]}{info}{end_code}")
+```
+
+This is just a simple print function. Using an "if" statement, if the user inputs "4" from the main menu options, it will run this code and print the information about their cryptocurrency.
+
+
+## Exiting the program
+
+```.py
+if option == 5:
+        print(f"{colors[6]}Exiting...{end_code}")
+        print(f"{colors[7]}{fonts[3]}See you soon!{end_code}".center(50, "="))
+        exit()
+```
+
+This is a simple print function that prints a message and exits the program. Using an "if" statement, if the user inputs "5" from the main menu options, it will run this code and print a farewell message and exit the code. 
+
+
+## Returning to main menu
+
+```.py
+state =input("Would you like to return to the main menu? If no, we will exit you from your Crypto Wallet. [yes/no]: ")
+    while not state.lower() in ["yes", "no"]:
+        state = input(f"{colors[1]}{state} is incorrect. Would you like to return to the main menu? If no, we will exit you from your Crypto Wallet. [yes/no]: {end_code}")
+
+    else:
+        if state.lower() == "yes":
+            welcome_msg = "Crypto Wallet".center(50, "=")
+            print(f"{colors[7]}{fonts[3]}{welcome_msg}{end_code}")
+            print("Options".center(50))
+
+            menu = """1. View Wallet Balance
+2. Deposit or Withdraw Funds
+3. Create or View Transaction History
+4. View Basic Description of the Cryptocurrency
+5. Exit
+"""
+            print(menu)
+            Main()
+        else:
+            thankyoumsg = "See you soon!".center(50, "=")
+            print(f"{colors[6]}Exiting...{end_code}")
+            print(f"{colors[7]}{fonts[3]}{thankyoumsg}{end_code}")
+            exit()
+```
+
+This code runs after the user finishes completing the desired action. For example, if the user wishes to view their current balance, they will choose option 1, and then this code above will run. It works using a "while" statement, where if what the user inputs matches what the code is asking for. Further, it uses an "if" statement, which allows the code to know whether to exit the program or return the user to the main menu.
+
+
+# Citations
+1. “How to Hash Passwords in Python.” GeeksforGeeks, 22 June 2022, https://www.geeksforgeeks.org/how-to-hash-passwords-in-python/. 
+2. “Drawing Ascii Bar Charts.” Drawing ASCII Bar Charts –, alexwlchan.net/2018/05/ascii-bar-charts/. 
