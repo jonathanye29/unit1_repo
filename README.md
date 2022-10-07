@@ -49,11 +49,10 @@ Fig 1. System diagram for the program. It shows the input/outputs and software/h
 ## Flow Diagrams
 
 ![](u1projectflowdiagram1.jpg)
-Fig 2. The flow diagram is for calculating the total balance the user has in their account according to their deposit and withdrawal history. The code will open and read both "balance.csv" and "withdraw.csv" files to see the data inside, and then calculate the difference to find the current balance. Then it will convert the cryptocurrency into USD using the rate of exchange, then print the balance and converted balance. If the balance is negative, it will print a different statement notifying the user that they have a negative balance.
-
+Fig 2. The flow diagram is for calculating the total balance the user has in their account according to their deposit and withdrawal history. The code will open and read both "balance.csv" and "withdraw.csv" files to see the data inside, and then calculate the difference to find the current balance and converted amount (USD).
 
 ![](u1projectflowdiagram2.jpg)
-Fig 3. The flow diagram is for calculating up all past transactions and printing them out onto an organized spreadsheet. The code will open up a file called "sheet.csv" which is where all the transaction data is stored and entered into. It will read the file and split the data into the three parts. The date, expense, and transaction amount. The code will then add up the expenses accordingly to their category, and print them into a spreadsheet that displays 3 columns," Date, Expense, Transaction amount (MKR)", and the amount of rows in the spreadsheet changes depending on how many transactions the user as created.
+Fig 3. The flow diagram is for calculating up all past transactions and printing them out onto an organized spreadsheet. The code will open up a file called "sheet.csv" which is where all the transaction data is stored and entered into. It will read the file and split the data into the three parts. The date, expense, and transaction amount.
 
 
 ![](u1projectflowdiagram3.jpg)
