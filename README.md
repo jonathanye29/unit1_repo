@@ -234,6 +234,59 @@ This is the code for the first menu option. If the user selects option 1 from th
 
 Above is the code that allows the user to choose between deposting or withdrawing funds. The data will be stored in the "balance.csv" and "withdraw.csv" files. The code allows the user to deposit or withdraw funds using an "if" statement. The "if" statement checks which option the user inputs. If they input "1", they are choosing option 1, which lets them deposit money. If they input "2", they are choosing option 2, which lets them withdraw money.
 
+## Create or view transaction history
+
+```.py
+if option == 3:
+    cvmenu = '''1. Create a transaction
+2. View transaction history'''
+    print(cvmenu)
+
+    cvmenu = validate_int_input('Please enter an option [1-2]: ')
+    while cvmenu > 2 or cvmenu < 1:
+        cvmenu = validate_int_input(f"{colors[1]}Invalid option. Please enter an option [1-2]: {end_code}")
+```
+
+Above is the code that allows the user to choose between creating a new transaction or viewing their transaction history. Using the "if" statement, the user will be directed to either creating a new transaction, or to their transaction history. To prevent user error, the code above will validate that the user inputs a digit within the range 1-2 and not something else. If the user does end up inputing something other than 1 or 2, an error message will appear and the user will be given another chance to input a correct option.
+
+## Create transaction
+
+```.py
+expensemenu = '''Please choose what type of expense your transaction is:
+1. Food
+2. Daily
+3. Rent
+4. Travel
+5. Other'''
+
+print(expensemenu)
+expensemenu = validate_int_input('Please enter an option [1-5]: ')
+while expensemenu > 5 or expensemenu < 1:
+    expensemenu = validate_int_input(f"{colors[1]}Invalid option. Please enter an option [1-5]: {end_code}")
+cats = ["Food", "Daily", "Rent", "Travel", "Other"]
+if expensemenu in [1,2,3,4,5]:
+    with open("sheet.csv", "a") as file:
+        MM = validate_int_input("Please enter the month of your transaction (ex. 01 - 12): ")
+        while not 0 < MM < 13:
+            print(f"{colors[1]}Invalid month.{end_code}")
+            MM = validate_int_input(f'Please enter the month you made this transaction (ex. 01 - 12): ')
+        DD = validate_int_input("Please enter the day of your transaction (ex. 01 - 31): ")
+        while not 0 < DD < 32:
+            print(f"{colors[1]}Invalid day.{end_code}")
+            DD = validate_int_input(f'Please enter the day you made this transaction (ex. 01 - 31): ')
+        YYYY = validate_int_input("Please enter the year of your transaction (ex. 2021): ")
+        while not 2000 < YYYY < 2023:
+            print(f"{colors[1]}Invalid year.{end_code}")
+            YYYY = validate_int_input(f'Please enter the year you made this transaction (ex. 2021): ')
+        date = f'{MM}/{DD}/{YYYY}'
+        cost = validate_int_input('Please type the cost of this transaction: ex. 10: ')
+        transaction = f"{date},{cats[expensemenu-1]},{cost}"
+        file.write(f'{transaction}\n')
+    print(f"{colors[2]}{fonts[0]}You have created a transaction for {cost}MKR for {cats[expensemenu - 1]} on {date}.{end_code}")
+```
+
+This is the code that allows the user to create a transaction. It first verifies an option the user inputs, 1-5, which defines each expense category. Then based off of the option, the transaction will be created under that category. The code opens "sheet.csv" as a file, and adds the data inputed by the user. The code asks for the expense type, date, and cost. To prevent user error, the date is verified by section. First month, then day, then year. If they type anything other than what the instructions prompt, and error message will print and they will be given the chance the try again. After all the data is gathered, it is neatly compiled and added into the database file "sheet.csv".
+
 
 ## Transaction history spreadsheet
 
