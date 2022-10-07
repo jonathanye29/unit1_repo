@@ -1,6 +1,7 @@
 # Unit-1 Project: Crypto Wallet
 
 ![](software-wallet.gif)
+
 <sub>Illustration: Wallet by Katie Horbal</sub>
 
 # Criteria A: Planning
