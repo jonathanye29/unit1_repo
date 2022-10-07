@@ -35,9 +35,9 @@ Justify the tools/structure of your solution
 1. The electronic ledger is a text-based software (Runs in the Terminal).
 2. The electronic ledger display the basic description of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
-4. The electronic ledger can only be accessed by the client through a set password.
+4. The electronic ledger can only be accessed by the client through a set and encrypted password.
 5. The electronic ledger will display all past transactions.
-6. The electronic ledger will show data about her expenses using a bar graph: Each color represents a certain expense.
+6. The electronic ledger will show data about her expenses using a bar graph.
 
 # Criteria B: Design
 
@@ -85,4 +85,72 @@ Fig 4. The flow diagram is for displaying the bar graph with all the transaction
 | 17 | Hide the password when it is being typed | The user will only see asteriks when entering their password to increase security. | 45 minutes | Oct 5 | C |
 | 18 | Draw and describe the flow diagrams | Flow diagrams for different parts of the solution along with a brief explanation | 1 hour | Oct 6 | B |
 
+
+# Criteria C: Development
+
+## Techniques Use:
+1. Functions
+2. For/while loops
+3. Input Validation
+4. If statements
+5. Encryption
+
+
+## User Registration
+
+```.py
+import hmac
+
+
+def register(uname:str, password:str):
+    '''
+    This function saves a user, password in the file
+    credentials.csv
+    :param uname: username a string
+    :param password: password a string
+    :return: nothing
+    '''
+
+    #open the file in mode append: a
+    file = open("credentials.csv", "a")
+    salty = "¯\(°_O)/¯"
+    to_hash = uname + password + salty
+    hashed_password = hmac.new(''.encode(), to_hash.encode(), 'sha512').hexdigest()
+    file.write(f"{uname},{hashed_password}\n")
+```
+
+
+The first part of creating a digital ledger for a client is to create a registration system so the client can create a Crypto Wallet account. This code allows the user to enter a username and password they desire, and it adds their crendentials into a file with and encrypted password.
+
+
+## User Login
+
+```.py
+def login(username:str, password:str) -> bool:
+    """This function receives a username and a password and returns 'ACCESS GRANTED'
+    if the username is in the database and the password is correct, otherwise returns 'ACCESS DENIED'"""
+
+    with open("credentials.csv", "r") as file:
+        database = file.readlines()
+    salty = "¯\(°_O)/¯"
+    to_hash = username + password + salty
+    hashed_password = hmac.new(''.encode(), to_hash.encode(),  'sha512').hexdigest()
+    output = f'{colors[1]}{fonts[0]}ACCESS DENIED{end_code}'.center(50, "-")
+    exit_condition = True
+
+
+    for line in database:
+       line_cleaned = line.strip()
+       user, password = line_cleaned.split(",")
+       if user == username and password == hashed_password:
+           output = f"{colors[2]}{fonts[0]}Welcome to your Crypto Wallet {user}!{end_code}".center(66, "-")
+           exit_condition = False
+           break
+    if exit_condition:
+        exit(f'{colors[1]}{fonts[0]}ACCESS DENIED{end_code}'.center(50, "-"))
+    return output
+```
+
+
+The code above is the program used to allow the client to login to their Crypto Wallet with their registered credentials. The code opens the file where the credntials are stored, and compares whether the entered crendentials match with the registered credentials. If the username and passwords match, it will grant the user access to their Crypto Wallet, and if they don't, they will not gain access to the Crypto Wallet.
 
