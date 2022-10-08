@@ -7,7 +7,7 @@
 
 ## Problem definition
 
-Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however at the moment she is tracking all her transactions using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms. Sato to find past transactions or important statistics about the currency. Ms Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics. 
+Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however at the moment she is tracking all her transactions using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms. Sato to find past transactions or important statistics about the currency. Ms. Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency she in her balance, her transaction history, along with some useful statistics and information. Ms. Sato is currently interesting in the cryptocurrency Maker and wisehes to use it as her main cryptocurrency in the digital ledger. Maker (MKR) is a smart contract platform built on the Ethereum blockchain that aims to solve volatility issues for the crypto market. It is the basis for a new-generation blockchain-based banking system that allows for faster and simpler international payments and peer-to-peer transactions. Maker aims to unlock the potential of decentralized finance by building an inclusive platform for economic empowerment that gives everyone equal access to the global financial marketplace [1]. 
 
 Apart for this requirements, Ms Sato is open to explore a cryptocurrency selected by the developer.
 
@@ -18,12 +18,6 @@ An example of the data store is:
 | Sep 23 2022 | Purchased groceries | Food | 0.073 MKR |
 | Sep 24 2022 | Purchased a new car | Expenses | 116.79 MKR |
 
-## Proposed Solution
-
-Design statement:
-I will to design and make a digital ledger for a client who is struggling to keep track of her transaction history. The digital ledge will not only allow my client to keep track of her transactions, she will be able to deposit and withdraw funds from her wallet, and also create new transactions. The Crypto Wallet will provide an easy and efficient way for her to deposit and withdraw funds and create transcations. Further, the digital ledger includes an organized and visually appealing sheet and bar graph displaying the transaction history. This digital ledger is constructed using the software Python and it will take about 35 hours to complete and will be evaluated according to the criteria given.
-
-Maker (MKR) is a smart contract platform built on the Ethereum blockchain that aims to solve volatility issues for the crypto market. It is the basis for a new-generation blockchain-based banking system that allows for faster and simpler international payments and peer-to-peer transactions. Maker aims to unlock the potential of decentralized finance by building an inclusive platform for economic empowerment that gives everyone equal access to the global financial marketplace.
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
@@ -32,6 +26,15 @@ Maker (MKR) is a smart contract platform built on the Ethereum blockchain that a
 4. The electronic ledger can only be accessed by the client through a set and encrypted password.
 5. The electronic ledger will display all past transactions.
 6. The electronic ledger will show data about her expenses using a bar graph.
+
+
+## Design Statement
+I will to design and make a digital ledger for a client who is struggling to organize and keep track of her transaction history. The digital ledge will not only allow my client to keep track of her transactions, but allow her to be able to deposit and withdraw funds from her wallet, and also create new transactions. The Crypto Wallet will provide an easy and efficient way for her to deposit and withdraw funds and create transcations. Further, the digital ledger will include an organized and visually appealing spread sheet and bar graph displaying her transaction history. This digital ledger is constructed using the software Python and it will take about 35 hours to complete and will be evaluated according to the criteria given.
+
+
+## Rationale for Proposed Solution
+I will be programming this digital ledger for my client in Python. I decided to use Python because it is the most popular and widely used programming language and it is also among the fastest-growing programming languages in the tech industry [3]. Additionally, according to CodingNomads, 30% of developers wish to learn Python the most [4]. As a result of its widespread use, the program is easier for many developers to understand than languages like C or Javascript. This will benefit the digital ledger being programmed in Python because it makes it simple for upcoming programmers to comprehend the code and advance its development. There are also a wide range of libraries that are available in Python which can be easily accessed using a basic syntax [5]. Further, Python is a very efficient langauge that does not require the programmer to compile their program before executing it. Due to the fact that programmers do not have to invoke a compiler and run the compiler that helps turn source files into compiled class files, they can just simply run a ".py" file [6]. The digital ledger can be efficiently programmed in Python to meet all of my clients needs and resolve all the problems she is facing.
+
 
 # Criteria B: Design
 
@@ -259,7 +262,11 @@ Since my client had trouble keeping track of all of their past transactions, I t
 [Video of the Program](https://drive.google.com/file/d/1ZUzw6oEtKnRyDeC0dIOOwuSIvULnd2qX/view?usp=sharing)
 
 # Citations
-1. Maker (MKR) Price, Charts, and News - Coinbase. www.coinbase.com/price/maker. Retrieved September 23
-2. Abra. “Maker.” Abra, 12 Apr. 2022, www.abra.com/cryptocurrency/maker/#:~:text=What%20is%20Maker%20coin%3F,peer%2Dto%2Dpeer%20transactions. September 23
-3. “How to Hash Passwords in Python.” GeeksforGeeks, 22 June 2022, www.geeksforgeeks.org/how-to-hash-passwords-in-python/. Retrieved September 28
-4. “Drawing Ascii Bar Charts.” Drawing ASCII Bar Charts –, alexwlchan.net/2018/05/ascii-bar-charts/. Retrieved October 1
+1. Maker (MKR) Price, Charts, and News - Coinbase. Retrieved September 23, 2022
+2. Abra. “Maker.” Abra, 12 Apr. 2022. Retrieved September 23, 2022
+3. Sanyal, Sayantani. 10 Reasons Why Python Is One Of The Best Programming Languages. Retrieved September 24, 2022
+4. Why learn python? 6 reasons why it's so hot right now. CodingNomads, 2022, January 19. Retrieved September 24, 2022 
+5. Advantages and disadvantages of python - how it is dominating Programming World. DataFlair. Retrieved September 24, 2022
+6. Vilmate. “Advantages of Python over Other Programming Languages.” VILMATE, 3 Oct. 2022. Retrieved September 24, 2022
+7. “How to Hash Passwords in Python.” GeeksforGeeks, 22 June 2022. Retrieved September 28, 2022
+8. “Drawing Ascii Bar Charts.” Drawing ASCII Bar Charts. Retrieved October 1, 2022
