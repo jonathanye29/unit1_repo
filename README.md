@@ -45,14 +45,14 @@ Fig 1. System diagram for the program. It shows the input/outputs and software/h
 
 ## Flow Diagrams
 
-
+![](u1projectflowdiagram1.jpg)
 Fig 2. The flow diagram is for calculating the total balance the user has in their account according to their deposit and withdrawal history. The code will open and read both "balance.csv" and "withdraw.csv" files to see the data inside, and then calculate the difference to find the current balance and converted amount (USD).
 
-
+![](u1projectflowdiagram2.jpg)
 Fig 3. The flow diagram is for calculating up all past transactions and printing them out onto an organized spreadsheet. The code will open up a file called "sheet.csv" which is where all the transaction data is stored and entered into. It will read the file and split the data into the three parts. The date, expense, and transaction amount.
 
 
-
+![](u1projectflowdiagram3.jpg)
 Fig 4. The flow diagram is for displaying the bar graph with all the transaction totals. It calculates the total amount of money spend in each expense and displays them in an organized categorized bar graph.
 
 
