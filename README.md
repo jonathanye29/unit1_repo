@@ -1,4 +1,4 @@
-# Unit-1 Project: Crypto Wallet
+# Unit-1 Project: Crypto Walle
 
 ![](software-wallet.gif)
 <sub>Illustration: Wallet by Katie Horbal</sub>
